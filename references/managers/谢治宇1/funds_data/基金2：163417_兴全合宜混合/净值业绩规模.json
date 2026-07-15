@@ -1,0 +1,8 @@
+{
+  "fund_code": "163417",
+  "fund_name": "兴全合宜灵活配置混合型证券投资基金",
+  "data": [
+    {"quarter": "2021Q4", "stock_position": null, "fund_size": null, "period_return": null, "benchmark_return": null, "notes": "新进快手-W、闻泰科技"},
+    {"quarter": "2026Q1", "stock_position": 84.93, "fund_size": null, "period_return": null, "benchmark_return": null, "notes": "自2020年以来最低仓位"}
+  ]
+}
