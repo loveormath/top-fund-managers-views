@@ -1,3 +1,7 @@
-requests>=2.28.0
-beautifulsoup4>=4.11.0
-lxml>=4.9.0
+# MCP server 运行必需
+mcp>=1.0.0
+
+# 可选（scripts/fetch_fund_data.py、fetch_any_fund.py 抓取基金数据时需要）
+# requests>=2.31
+# beautifulsoup4>=4.12
+# lxml>=5.0
