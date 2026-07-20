@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "top-fund-managers-mcp"
+version = "0.1.0"
+description = "中国顶流基金经理观点库 —— 封装为 MCP server（同时提供 CLI）"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["mcp>=1.0.0"]
+
+[project.optional-dependencies]
+# 抓取基金经理基金数据 / 任意基金对比时需要
+fetch = [
+    "requests>=2.31",
+    "beautifulsoup4>=4.12",
+    "lxml>=5.0",
+]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+tfm = "top_fund_managers_mcp.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

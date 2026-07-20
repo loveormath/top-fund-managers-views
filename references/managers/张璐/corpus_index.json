@@ -1,167 +1,156 @@
 {
-    "manager": "张璐",
-    "home": "https://www.maxwealthfund.com/search?search=%E5%BC%A0%E7%92%90",
-    "counts": {
-      "定期报告": 18
+  "manager": "张璐",
+  "documents": [
+    {
+      "type": "定期报告",
+      "title": "永赢上证科创板人工智能指数型发起式证券投资基金2025年年度报告",
+      "path": "定期报告\\永赢上证科创板人工智能指数型发起式证券投资基金2025年年度报告.md",
+      "file": "E:\\6002\\top-fund-managers-views\\references\\managers\\张璐\\corpus\\定期报告\\永赢上证科创板人工智能指数型发起式证券投资基金2025年年度报告.md"
     },
-    "date_range": {
-      "min": "2023-06-30",
-      "max": "2026-03-31"
+    {
+      "type": "定期报告",
+      "title": "永赢上证科创板人工智能指数型发起式证券投资基金2025年第3季度报告",
+      "path": "定期报告\\永赢上证科创板人工智能指数型发起式证券投资基金2025年第3季度报告.md",
+      "file": "E:\\6002\\top-fund-managers-views\\references\\managers\\张璐\\corpus\\定期报告\\永赢上证科创板人工智能指数型发起式证券投资基金2025年第3季度报告.md"
     },
-    "documents": [
-      {
-        "type": "定期报告",
-        "title": "永赢先进制造智选混合型发起式证券投资基金2023年第2季度报告",
-        "date": "2023-06-30",
-        "link": "https://www.maxwealthfund.com/viewPDF/?file=https://owa.maxwealthfund.com/gateway/cms.file/file/2023/07/19/%E6%B0%B8%E8%B5%A2%E5%85%88%E8%BF%9B%E5%88%B6%E9%80%A0%E6%99%BA%E9%80%89%E6%B7%B7%E5%90%88%E5%9E%8B%E5%8F%91%E8%B5%B7%E5%BC%8F%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%9F%BA%E9%87%912023%E5%B9%B4%E7%AC%AC2%E5%AD%A3%E5%BA%A6%E6%8A%A5%E5%91%8A_1689755064053.pdf",
-        "path": "永赢先进制造智选混合型发起式证券投资基金2023年第2季度报告.md"
-      },
-      {
-        "type": "定期报告",
-        "title": "永赢先进制造智选混合型发起式证券投资基金2023年中期报告",
-        "date": "2023-06-30",
-        "link": "https://www.maxwealthfund.com/viewPDF/?file=https://owa.maxwealthfund.com/gateway/cms.file/file/2023/08/29/%E6%B0%B8%E8%B5%A2%E5%85%88%E8%BF%9B%E5%88%B6%E9%80%A0%E6%99%BA%E9%80%89%E6%B7%B7%E5%90%88%E5%9E%8B%E5%8F%91%E8%B5%B7%E5%BC%8F%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%9F%BA%E9%87%912023%E5%B9%B4%E4%B8%AD%E6%9C%9F%E6%8A%A5%E5%91%8A_1693302308561.pdf",
-        "path": "永赢先进制造智选混合型发起式证券投资基金2023年中期报告.md"
-      },
-      {
-        "type": "定期报告",
-        "title": "永赢先进制造智选混合型发起式证券投资基金2023年第3季度报告",
-        "date": "2023-09-30",
-        "link": "https://www.maxwealthfund.com/viewPDF/?file=https://owa.maxwealthfund.com/gateway/cms.file/file/2023/10/24/%E6%B0%B8%E8%B5%A2%E5%85%88%E8%BF%9B%E5%88%B6%E9%80%A0%E6%99%BA%E9%80%89%E6%B7%B7%E5%90%88%E5%9E%8B%E5%8F%91%E8%B5%B7%E5%BC%8F%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%9F%BA%E9%87%912023%E5%B9%B4%E7%AC%AC3%E5%AD%A3%E5%BA%A6%E6%8A%A5%E5%91%8A_1698141035580.pdf",
-        "path": "永赢先进制造智选混合型发起式证券投资基金2023年第3季度报告.md"
-      },
-      {
-        "type": "定期报告",
-        "title": "永赢先进制造智选混合型发起式证券投资基金2023年第4季度报告",
-        "date": "2023-12-31",
-        "link": "https://www.maxwealthfund.com/viewPDF/?file=https://owa.maxwealthfund.com/gateway/cms.file/file/notice/2024/01/18/%E6%B0%B8%E8%B5%A2%E5%85%88%E8%BF%9B%E5%88%B6%E9%80%A0%E6%99%BA%E9%80%89%E6%B7%B7%E5%90%88%E5%9E%8B%E5%8F%91%E8%B5%B7%E5%BC%8F%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%9F%BA%E9%87%912023%E5%B9%B4%E7%AC%AC4%E5%AD%A3%E5%BA%A6%E6%8A%A5%E5%91%8A_1705573097843.pdf",
-        "path": "永赢先进制造智选混合型发起式证券投资基金2023年第4季度报告.md"
-      },
-      {
-        "type": "定期报告",
-        "title": "永赢先进制造智选混合型发起式证券投资基金2023年年度报告",
-        "date": "2023-12-31",
-        "link": "https://www.maxwealthfund.com/viewPDF/?file=https://owa.maxwealthfund.com/gateway/cms.file/file/notice/2024/03/26/%E6%B0%B8%E8%B5%A2%E5%85%88%E8%BF%9B%E5%88%B6%E9%80%A0%E6%99%BA%E9%80%89%E6%B7%B7%E5%90%88%E5%9E%8B%E5%8F%91%E8%B5%B7%E5%BC%8F%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%9F%BA%E9%87%912023%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A_1711451930229.pdf",
-        "path": "永赢先进制造智选混合型发起式证券投资基金2023年年度报告.md"
-      },
-      {
-        "type": "定期报告",
-        "title": "永赢先进制造智选混合型发起式证券投资基金2024年第1季度报告",
-        "date": "2024-03-31",
-        "link": "https://www.maxwealthfund.com/viewPDF/?file=https://owa.maxwealthfund.com/gateway/cms.file/file/2024/04/19/%E6%B0%B8%E8%B5%A2%E5%85%88%E8%BF%9B%E5%88%B6%E9%80%A0%E6%99%BA%E9%80%89%E6%B7%B7%E5%90%88%E5%9E%8B%E5%8F%91%E8%B5%B7%E5%BC%8F%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%9F%BA%E9%87%912024%E5%B9%B4%E7%AC%AC1%E5%AD%A3%E5%BA%A6%E6%8A%A5%E5%91%8A_1713532907093.pdf",
-        "path": "永赢先进制造智选混合型发起式证券投资基金2024年第1季度报告.md"
-      },
-      {
-        "type": "定期报告",
-        "title": "永赢先进制造智选混合型发起式证券投资基金2024年第2季度报告",
-        "date": "2024-06-30",
-        "link": "https://www.maxwealthfund.com/viewPDF/?file=https://owa.maxwealthfund.com/gateway/cms.file/file/notice/2024/07/17/%E6%B0%B8%E8%B5%A2%E5%85%88%E8%BF%9B%E5%88%B6%E9%80%A0%E6%99%BA%E9%80%89%E6%B7%B7%E5%90%88%E5%9E%8B%E5%8F%91%E8%B5%B7%E5%BC%8F%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%9F%BA%E9%87%912024%E5%B9%B4%E7%AC%AC2%E5%AD%A3%E5%BA%A6%E6%8A%A5%E5%91%8A_1721213823371.pdf",
-        "path": "永赢先进制造智选混合型发起式证券投资基金2024年第2季度报告.md"
-      },
-      {
-        "type": "定期报告",
-        "title": "永赢先进制造智选混合型发起式证券投资基金2024年中期报告",
-        "date": "2024-06-30",
-        "link": "https://www.maxwealthfund.com/viewPDF/?file=https://owa.maxwealthfund.com/gateway/cms.file/file/notice/2024/08/28/%E6%B0%B8%E8%B5%A2%E5%85%88%E8%BF%9B%E5%88%B6%E9%80%A0%E6%99%BA%E9%80%89%E6%B7%B7%E5%90%88%E5%9E%8B%E5%8F%91%E8%B5%B7%E5%BC%8F%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%9F%BA%E9%87%912024%E5%B9%B4%E4%B8%AD%E6%9C%9F%E6%8A%A5%E5%91%8A_1724840572023.pdf",
-        "path": "永赢先进制造智选混合型发起式证券投资基金2024年中期报告.md"
-      },
-      {
-        "type": "定期报告",
-        "title": "永赢先进制造智选混合型发起式证券投资基金2024年第3季度报告",
-        "date": "2024-09-30",
-        "link": "https://www.maxwealthfund.com/viewPDF/?file=https://owa.maxwealthfund.com/gateway/cms.file/file/notice/2024/10/23/%E6%B0%B8%E8%B5%A2%E5%85%88%E8%BF%9B%E5%88%B6%E9%80%A0%E6%99%BA%E9%80%89%E6%B7%B7%E5%90%88%E5%9E%8B%E5%8F%91%E8%B5%B7%E5%BC%8F%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%9F%BA%E9%87%912024%E5%B9%B4%E7%AC%AC3%E5%AD%A3%E5%BA%A6%E6%8A%A5%E5%91%8A_1729679121446.pdf",
-        "path": "永赢先进制造智选混合型发起式证券投资基金2024年第3季度报告.md"
-      },
-      {
-        "type": "定期报告",
-        "title": "永赢先进制造智选混合型发起式证券投资基金2024年第4季度报告",
-        "date": "2024-12-31",
-        "link": "https://www.maxwealthfund.com/viewPDF/?file=https://owa.maxwealthfund.com/gateway/cms.file/file/notice/2025/01/20/%E6%B0%B8%E8%B5%A2%E5%85%88%E8%BF%9B%E5%88%B6%E9%80%A0%E6%99%BA%E9%80%89%E6%B7%B7%E5%90%88%E5%9E%8B%E5%8F%91%E8%B5%B7%E5%BC%8F%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%9F%BA%E9%87%912024%E5%B9%B4%E7%AC%AC4%E5%AD%A3%E5%BA%A6%E6%8A%A5%E5%91%8A2024%E5%B9%B412%E6%9C%8831%E6%97%A5_1737373787240.pdf",
-        "path": "永赢先进制造智选混合型发起式证券投资基金2024年第4季度报告.md"
-      },
-      {
-        "type": "定期报告",
-        "title": "永赢先进制造智选混合型发起式证券投资基金2024年年度报告",
-        "date": "2024-12-31",
-        "link": "https://www.maxwealthfund.com/viewPDF/?file=https://owa.maxwealthfund.com/gateway/cms.file/file/notice/2025/03/27/%E6%B0%B8%E8%B5%A2%E5%85%88%E8%BF%9B%E5%88%B6%E9%80%A0%E6%99%BA%E9%80%89%E6%B7%B7%E5%90%88%E5%9E%8B%E5%8F%91%E8%B5%B7%E5%BC%8F%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%9F%BA%E9%87%912024%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A_1743070474371.pdf",
-        "path": "永赢先进制造智选混合型发起式证券投资基金2024年年度报告.md"
-      },
-      {
-        "type": "定期报告",
-        "title": "永赢先进制造智选混合型发起式证券投资基金2025年第1季度报告",
-        "date": "2025-03-31",
-        "link": "https://www.maxwealthfund.com/viewPDF/?file=https://owa.maxwealthfund.com/gateway/cms.file/file/notice/2025/04/18/%E6%B0%B8%E8%B5%A2%E5%85%88%E8%BF%9B%E5%88%B6%E9%80%A0%E6%99%BA%E9%80%89%E6%B7%B7%E5%90%88%E5%9E%8B%E5%8F%91%E8%B5%B7%E5%BC%8F%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%9F%BA%E9%87%912025%E5%B9%B4%E7%AC%AC1%E5%AD%A3%E5%BA%A6%E6%8A%A5%E5%91%8A_1744970031025.pdf",
-        "path": "永赢先进制造智选混合型发起式证券投资基金2025年第1季度报告.md"
-      },
-      {
-        "type": "定期报告",
-        "title": "永赢先进制造智选混合型发起式证券投资基金2025年第2季度报告",
-        "date": "2025-06-30",
-        "link": "https://www.maxwealthfund.com/viewPDF/?file=https://owa.maxwealthfund.com/gateway/cms.file/file/notice/2025/07/16/%E6%B0%B8%E8%B5%A2%E5%85%88%E8%BF%9B%E5%88%B6%E9%80%A0%E6%99%BA%E9%80%89%E6%B7%B7%E5%90%88%E5%9E%8B%E5%8F%91%E8%B5%B7%E5%BC%8F%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%9F%BA%E9%87%912025%E5%B9%B4%E7%AC%AC2%E5%AD%A3%E5%BA%A6%E6%8A%A5%E5%91%8A_1752662452634.pdf",
-        "path": "永赢先进制造智选混合型发起式证券投资基金2025年第2季度报告.md"
-      },
-      {
-        "type": "定期报告",
-        "title": "永赢先进制造智选混合型发起式证券投资基金2025年中期报告",
-        "date": "2025-06-30",
-        "link": "https://www.maxwealthfund.com/viewPDF/?file=https://owa.maxwealthfund.com/gateway/cms.file/file/notice/2025/08/27/%E6%B0%B8%E8%B5%A2%E5%85%88%E8%BF%9B%E5%88%B6%E9%80%A0%E6%99%BA%E9%80%89%E6%B7%B7%E5%90%88%E5%9E%8B%E5%8F%91%E8%B5%B7%E5%BC%8F%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%9F%BA%E9%87%912025%E5%B9%B4%E4%B8%AD%E6%9C%9F%E6%8A%A5%E5%91%8A_1756293730372.pdf",
-        "path": "永赢先进制造智选混合型发起式证券投资基金2025年中期报告.md"
-      },
-      {
-        "type": "定期报告",
-        "title": "永赢先进制造智选混合型发起式证券投资基金2025年第3季度报告",
-        "date": "2025-09-30",
-        "link": "https://www.maxwealthfund.com/viewPDF/?file=https://owa.maxwealthfund.com/gateway/cms.file/file/notice/2025/10/24/%E6%B0%B8%E8%B5%A2%E5%85%88%E8%BF%9B%E5%88%B6%E9%80%A0%E6%99%BA%E9%80%89%E6%B7%B7%E5%90%88%E5%9E%8B%E5%8F%91%E8%B5%B7%E5%BC%8F%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%9F%BA%E9%87%912025%E5%B9%B4%E7%AC%AC3%E5%AD%A3%E5%BA%A6%E6%8A%A5%E5%91%8A_1761301481464.pdf",
-        "path": "永赢先进制造智选混合型发起式证券投资基金2025年第3季度报告.md"
-      },
-      {
-        "type": "定期报告",
-        "title": "永赢先进制造智选混合型发起式证券投资基金2025年第4季度报告",
-        "date": "2025-12-31",
-        "link": "https://www.maxwealthfund.com/viewPDF/?file=https://owa.maxwealthfund.com/gateway/cms.file/file/notice/2026/01/20/%E6%B0%B8%E8%B5%A2%E5%85%88%E8%BF%9B%E5%88%B6%E9%80%A0%E6%99%BA%E9%80%89%E6%B7%B7%E5%90%88%E5%9E%8B%E5%8F%91%E8%B5%B7%E5%BC%8F%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%9F%BA%E9%87%912025%E5%B9%B4%E7%AC%AC4%E5%AD%A3%E5%BA%A6%E6%8A%A5%E5%91%8A_1768903616733.pdf",
-        "path": "永赢先进制造智选混合型发起式证券投资基金2025年第4季度报告.md"
-      },
-      {
-        "type": "定期报告",
-        "title": "永赢先进制造智选混合型发起式证券投资基金2025年年度报告",
-        "date": "2025-12-31",
-        "link": "https://www.maxwealthfund.com/viewPDF/?file=https://owa.maxwealthfund.com/gateway/cms.file/file/notice/2026/03/30/%E6%B0%B8%E8%B5%A2%E5%85%88%E8%BF%9B%E5%88%B6%E9%80%A0%E6%99%BA%E9%80%89%E6%B7%B7%E5%90%88%E5%9E%8B%E5%8F%91%E8%B5%B7%E5%BC%8F%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%9F%BA%E9%87%912025%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A_1774865610788.pdf",
-        "path": "永赢先进制造智选混合型发起式证券投资基金2025年年度报告.md"
-      },
-      {
-        "type": "定期报告",
-        "title": "永赢先进制造智选混合型发起式证券投资基金2026年第1季度报告",
-        "date": "2026-03-31",
-        "link": "https://www.maxwealthfund.com/viewPDF/?file=https://owa.maxwealthfund.com/gateway/cms.file/file/notice/2026/04/21/%E6%B0%B8%E8%B5%A2%E5%85%88%E8%BF%9B%E5%88%B6%E9%80%A0%E6%99%BA%E9%80%89%E6%B7%B7%E5%90%88%E5%9E%8B%E5%8F%91%E8%B5%B7%E5%BC%8F%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%9F%BA%E9%87%912026%E5%B9%B4%E7%AC%AC1%E5%AD%A3%E5%BA%A6%E6%8A%A5%E5%91%8A_1776763280193.pdf",
-        "path": "永赢先进制造智选混合型发起式证券投资基金2026年第1季度报告.md"
-      },
-      {
-        "type": "定期报告",
-        "title": "永赢上证科创板人工智能指数型发起式证券投资基金2025年第3季度报告",
-        "date": "2025-09-30",
-        "link": "https://www.maxwealthfund.com/viewPDF/?file=https://owa.maxwealthfund.com/gateway/cms.file/file/notice/2025/10/24/%E6%B0%B8%E8%B5%A2%E4%B8%8A%E8%AF%81%E7%A7%91%E5%88%9B%E6%9D%BF%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%8C%87%E6%95%B0%E5%9E%8B%E5%8F%91%E8%B5%B7%E5%BC%8F%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%9F%BA%E9%87%912025%E5%B9%B4%E7%AC%AC3%E5%AD%A3%E5%BA%A6%E6%8A%A5%E5%91%8A_1761301487065.pdf",
-        "path": "永赢上证科创板人工智能指数型发起式证券投资基金2025年第3季度报告.md"
-      },
-      {
-        "type": "定期报告",
-        "title": "永赢上证科创板人工智能指数型发起式证券投资基金2025年第4季度报告",
-        "date": "2025-12-31",
-        "link": "https://www.maxwealthfund.com/viewPDF/?file=https://owa.maxwealthfund.com/gateway/cms.file/file/notice/2026/01/20/%E6%B0%B8%E8%B5%A2%E4%B8%8A%E8%AF%81%E7%A7%91%E5%88%9B%E6%9D%BF%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%8C%87%E6%95%B0%E5%9E%8B%E5%8F%91%E8%B5%B7%E5%BC%8F%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%9F%BA%E9%87%912025%E5%B9%B4%E7%AC%AC4%E5%AD%A3%E5%BA%A6%E6%8A%A5%E5%91%8A_1768903616810.pdf",
-        "path": "永赢上证科创板人工智能指数型发起式证券投资基金2025年第4季度报告.md"
-      },
-      {
-        "type": "定期报告",
-        "title": "永赢上证科创板人工智能指数型发起式证券投资基金2025年年度报告",
-        "date": "2025-12-31",
-        "link": "https://www.maxwealthfund.com/viewPDF/?file=https://owa.maxwealthfund.com/gateway/cms.file/file/notice/2026/03/30/%E6%B0%B8%E8%B5%A2%E4%B8%8A%E8%AF%81%E7%A7%91%E5%88%9B%E6%9D%BF%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%8C%87%E6%95%B0%E5%9E%8B%E5%8F%91%E8%B5%B7%E5%BC%8F%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%9F%BA%E9%87%912025%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A_1774865611337.pdf",
-        "path": "永赢上证科创板人工智能指数型发起式证券投资基金2025年年度报告.md"
-      },
-      {
-        "type": "定期报告",
-        "title": "永赢上证科创板人工智能指数型发起式证券投资基金2026年第1季度报告",
-        "date": "2026-03-31",
-        "link": "https://www.maxwealthfund.com/viewPDF/?file=https://owa.maxwealthfund.com/gateway/cms.file/file/notice/2026/04/21/%E6%B0%B8%E8%B5%A2%E4%B8%8A%E8%AF%81%E7%A7%91%E5%88%9B%E6%9D%BF%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%8C%87%E6%95%B0%E5%9E%8B%E5%8F%91%E8%B5%B7%E5%BC%8F%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%9F%BA%E9%87%912026%E5%B9%B4%E7%AC%AC1%E5%AD%A3%E5%BA%A6%E6%8A%A5%E5%91%8A_1776763289706.pdf",
-        "path": "永赢上证科创板人工智能指数型发起式证券投资基金2026年第1季度报告.md"
-      }
-    ]
-  }
+    {
+      "type": "定期报告",
+      "title": "永赢上证科创板人工智能指数型发起式证券投资基金2025年第4季度报告",
+      "path": "定期报告\\永赢上证科创板人工智能指数型发起式证券投资基金2025年第4季度报告.md",
+      "file": "E:\\6002\\top-fund-managers-views\\references\\managers\\张璐\\corpus\\定期报告\\永赢上证科创板人工智能指数型发起式证券投资基金2025年第4季度报告.md"
+    },
+    {
+      "type": "定期报告",
+      "title": "永赢上证科创板人工智能指数型发起式证券投资基金2026年第1季度报告",
+      "path": "定期报告\\永赢上证科创板人工智能指数型发起式证券投资基金2026年第1季度报告.md",
+      "file": "E:\\6002\\top-fund-managers-views\\references\\managers\\张璐\\corpus\\定期报告\\永赢上证科创板人工智能指数型发起式证券投资基金2026年第1季度报告.md"
+    },
+    {
+      "type": "定期报告",
+      "title": "永赢先进制造智选混合型发起式证券投资基金2023年中期报告",
+      "path": "定期报告\\永赢先进制造智选混合型发起式证券投资基金2023年中期报告.md",
+      "file": "E:\\6002\\top-fund-managers-views\\references\\managers\\张璐\\corpus\\定期报告\\永赢先进制造智选混合型发起式证券投资基金2023年中期报告.md"
+    },
+    {
+      "type": "定期报告",
+      "title": "永赢先进制造智选混合型发起式证券投资基金2023年年度报告",
+      "path": "定期报告\\永赢先进制造智选混合型发起式证券投资基金2023年年度报告.md",
+      "file": "E:\\6002\\top-fund-managers-views\\references\\managers\\张璐\\corpus\\定期报告\\永赢先进制造智选混合型发起式证券投资基金2023年年度报告.md"
+    },
+    {
+      "type": "定期报告",
+      "title": "永赢先进制造智选混合型发起式证券投资基金2023年第2季度报告",
+      "path": "定期报告\\永赢先进制造智选混合型发起式证券投资基金2023年第2季度报告.md",
+      "file": "E:\\6002\\top-fund-managers-views\\references\\managers\\张璐\\corpus\\定期报告\\永赢先进制造智选混合型发起式证券投资基金2023年第2季度报告.md"
+    },
+    {
+      "type": "定期报告",
+      "title": "永赢先进制造智选混合型发起式证券投资基金2023年第3季度报告",
+      "path": "定期报告\\永赢先进制造智选混合型发起式证券投资基金2023年第3季度报告.md",
+      "file": "E:\\6002\\top-fund-managers-views\\references\\managers\\张璐\\corpus\\定期报告\\永赢先进制造智选混合型发起式证券投资基金2023年第3季度报告.md"
+    },
+    {
+      "type": "定期报告",
+      "title": "永赢先进制造智选混合型发起式证券投资基金2023年第4季度报告",
+      "path": "定期报告\\永赢先进制造智选混合型发起式证券投资基金2023年第4季度报告.md",
+      "file": "E:\\6002\\top-fund-managers-views\\references\\managers\\张璐\\corpus\\定期报告\\永赢先进制造智选混合型发起式证券投资基金2023年第4季度报告.md"
+    },
+    {
+      "type": "定期报告",
+      "title": "永赢先进制造智选混合型发起式证券投资基金2024年中期报告",
+      "path": "定期报告\\永赢先进制造智选混合型发起式证券投资基金2024年中期报告.md",
+      "file": "E:\\6002\\top-fund-managers-views\\references\\managers\\张璐\\corpus\\定期报告\\永赢先进制造智选混合型发起式证券投资基金2024年中期报告.md"
+    },
+    {
+      "type": "定期报告",
+      "title": "永赢先进制造智选混合型发起式证券投资基金2024年年度报告",
+      "path": "定期报告\\永赢先进制造智选混合型发起式证券投资基金2024年年度报告.md",
+      "file": "E:\\6002\\top-fund-managers-views\\references\\managers\\张璐\\corpus\\定期报告\\永赢先进制造智选混合型发起式证券投资基金2024年年度报告.md"
+    },
+    {
+      "type": "定期报告",
+      "title": "永赢先进制造智选混合型发起式证券投资基金2024年第1季度报告",
+      "path": "定期报告\\永赢先进制造智选混合型发起式证券投资基金2024年第1季度报告.md",
+      "file": "E:\\6002\\top-fund-managers-views\\references\\managers\\张璐\\corpus\\定期报告\\永赢先进制造智选混合型发起式证券投资基金2024年第1季度报告.md"
+    },
+    {
+      "type": "定期报告",
+      "title": "永赢先进制造智选混合型发起式证券投资基金2024年第2季度报告",
+      "path": "定期报告\\永赢先进制造智选混合型发起式证券投资基金2024年第2季度报告.md",
+      "file": "E:\\6002\\top-fund-managers-views\\references\\managers\\张璐\\corpus\\定期报告\\永赢先进制造智选混合型发起式证券投资基金2024年第2季度报告.md"
+    },
+    {
+      "type": "定期报告",
+      "title": "永赢先进制造智选混合型发起式证券投资基金2024年第3季度报告",
+      "path": "定期报告\\永赢先进制造智选混合型发起式证券投资基金2024年第3季度报告.md",
+      "file": "E:\\6002\\top-fund-managers-views\\references\\managers\\张璐\\corpus\\定期报告\\永赢先进制造智选混合型发起式证券投资基金2024年第3季度报告.md"
+    },
+    {
+      "type": "定期报告",
+      "title": "永赢先进制造智选混合型发起式证券投资基金2024年第4季度报告",
+      "path": "定期报告\\永赢先进制造智选混合型发起式证券投资基金2024年第4季度报告.md",
+      "file": "E:\\6002\\top-fund-managers-views\\references\\managers\\张璐\\corpus\\定期报告\\永赢先进制造智选混合型发起式证券投资基金2024年第4季度报告.md"
+    },
+    {
+      "type": "定期报告",
+      "title": "永赢先进制造智选混合型发起式证券投资基金2025年中期报告",
+      "path": "定期报告\\永赢先进制造智选混合型发起式证券投资基金2025年中期报告.md",
+      "file": "E:\\6002\\top-fund-managers-views\\references\\managers\\张璐\\corpus\\定期报告\\永赢先进制造智选混合型发起式证券投资基金2025年中期报告.md"
+    },
+    {
+      "type": "定期报告",
+      "title": "永赢先进制造智选混合型发起式证券投资基金2025年年度报告",
+      "path": "定期报告\\永赢先进制造智选混合型发起式证券投资基金2025年年度报告.md",
+      "file": "E:\\6002\\top-fund-managers-views\\references\\managers\\张璐\\corpus\\定期报告\\永赢先进制造智选混合型发起式证券投资基金2025年年度报告.md"
+    },
+    {
+      "type": "定期报告",
+      "title": "永赢先进制造智选混合型发起式证券投资基金2025年第1季度报告",
+      "path": "定期报告\\永赢先进制造智选混合型发起式证券投资基金2025年第1季度报告.md",
+      "file": "E:\\6002\\top-fund-managers-views\\references\\managers\\张璐\\corpus\\定期报告\\永赢先进制造智选混合型发起式证券投资基金2025年第1季度报告.md"
+    },
+    {
+      "type": "定期报告",
+      "title": "永赢先进制造智选混合型发起式证券投资基金2025年第2季度报告",
+      "path": "定期报告\\永赢先进制造智选混合型发起式证券投资基金2025年第2季度报告.md",
+      "file": "E:\\6002\\top-fund-managers-views\\references\\managers\\张璐\\corpus\\定期报告\\永赢先进制造智选混合型发起式证券投资基金2025年第2季度报告.md"
+    },
+    {
+      "type": "定期报告",
+      "title": "永赢先进制造智选混合型发起式证券投资基金2025年第3季度报告",
+      "path": "定期报告\\永赢先进制造智选混合型发起式证券投资基金2025年第3季度报告.md",
+      "file": "E:\\6002\\top-fund-managers-views\\references\\managers\\张璐\\corpus\\定期报告\\永赢先进制造智选混合型发起式证券投资基金2025年第3季度报告.md"
+    },
+    {
+      "type": "定期报告",
+      "title": "永赢先进制造智选混合型发起式证券投资基金2025年第4季度报告",
+      "path": "定期报告\\永赢先进制造智选混合型发起式证券投资基金2025年第4季度报告.md",
+      "file": "E:\\6002\\top-fund-managers-views\\references\\managers\\张璐\\corpus\\定期报告\\永赢先进制造智选混合型发起式证券投资基金2025年第4季度报告.md"
+    },
+    {
+      "type": "定期报告",
+      "title": "永赢先进制造智选混合型发起式证券投资基金2026年第1季度报告",
+      "path": "定期报告\\永赢先进制造智选混合型发起式证券投资基金2026年第1季度报告.md",
+      "file": "E:\\6002\\top-fund-managers-views\\references\\managers\\张璐\\corpus\\定期报告\\永赢先进制造智选混合型发起式证券投资基金2026年第1季度报告.md"
+    },
+    {
+      "type": "其他",
+      "title": "简介",
+      "path": "简介.md",
+      "file": "E:\\6002\\top-fund-managers-views\\references\\managers\\张璐\\corpus\\简介.md"
+    },
+    {
+      "type": "其他",
+      "title": "张璐 · 在任基金",
+      "path": "管理基金_在任.md",
+      "file": "E:\\6002\\top-fund-managers-views\\references\\managers\\张璐\\corpus\\管理基金_在任.md"
+    },
+    {
+      "type": "其他",
+      "title": "张璐 · 曾任基金",
+      "path": "管理基金_曾任.md",
+      "file": "E:\\6002\\top-fund-managers-views\\references\\managers\\张璐\\corpus\\管理基金_曾任.md"
+    }
+  ],
+  "updated": "2026-07-18 00:00"
+}
