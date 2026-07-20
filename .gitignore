@@ -28,3 +28,11 @@ references/all_funds/fund_list.json.bak
 
 # Logs
 *.log
+
+# Local agent/workbuddy dir (not project data)
+.workbuddy/
+
+# Scratch/temp files generated during local verification
+_h.txt
+_*.txt
+_*.py
