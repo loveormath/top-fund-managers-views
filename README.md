@@ -83,7 +83,7 @@ _（Demo 视频待补充 —— 这里就是放演示视频的位置）_
 | **高楠** | 永赢基金 | 701.05 亿 | 永赢睿信(019431) | 92.30% | 全市场管理规模最大主动基金经理，2 年 4 只翻倍基 |
 | **刘旭** | 大成基金 | 约 265 亿 | 大成高鑫股票A(000628) | — | 低换手、高集中、长期持有的深度价值代表 |
 | **张璐** | 永赢基金 | — | 永赢先进制造智选混合发起A(018124) | — | Beta 大通道风格、聚焦高端制造 / 半导体 |
-| **赵诣** | 泉果基金（原农银汇理） | — | 农银汇理研究精选混合(000336) | — | 长坡厚雪、高端制造成长投资 |
+| **赵诣** | 泉果基金（原农银汇理） | — | 农银汇理研究精选混合(000336) | — | 坡厚雪、高端制造成长投资 |
 
 > **⚠️ 仅供研究与学习辅助，不构成投资建议。**
 
@@ -273,7 +273,7 @@ src/top_fund_managers_mcp/
     ├── score.py           # 框架评分
     ├── generate.py        # 复用性引擎（生成 Skill 骨架）
     ├── index.py           # 语料索引重建
-    └── fund_lookup.py     # 全市场基金代码查询
+    └── fund_lookup.py    # 全市场基金代码查询
 ```
 
 > **设计要点**：`core/` 不依赖 MCP，所有能力以「返回字符串」的函数实现，因此 **CLI 与 MCP 工具共用同一份逻辑、输出完全一致**；新增经理零代码改动即被识别。
@@ -343,9 +343,7 @@ python -m top_fund_managers_mcp build_index
 下面每个工具同时给出 **MCP 参数** 与 **CLI 用法**。所有工具返回纯文本（Markdown），便于直接嵌入对话或落盘。
 
 ### 1. `list_managers`
-
 列出全部基金经理（运行时动态发现），返回经理名与代表基金。
-
 - **MCP**：无参数。
 - **CLI**：`list_managers`（别名 `managers`）。
 - **示例**：
@@ -358,9 +356,7 @@ python -m top_fund_managers_mcp build_index
   ```
 
 ### 2. `search_corpus`
-
 在基金经理语料中搜索关键词，返回命中段落与出处。
-
 - **MCP 参数**：
   - `keywords: list[str]` — 一个或多个关键词
   - `manager: str | None` — 限定经理（留空则跨全部六位）
@@ -376,9 +372,7 @@ python -m top_fund_managers_mcp build_index
   ```
 
 ### 3. `compare_managers`
-
 横向对比多位基金经理（对应 PPT Track B 整合能力）。
-
 - **MCP 参数**：
   - `mode: str` — `"topic"`（同主题观点）/ `"method"`（方法框架）/ `"fund"`（代表基金业绩）
   - `keyword: str | None` — `topic` 模式下的主题 / 标的关键词
@@ -392,9 +386,7 @@ python -m top_fund_managers_mcp build_index
   ```
 
 ### 4. `score_fund`
-
 用某经理的投资框架给一只基金打分（备数据 + 算机械指标 + 指引）。
-
 - **MCP 参数**：
   - `fund: str` — 基金代码或名称
   - `manager: str` — 必须的评分框架归属经理之一（读其 `scorecard.md`）
@@ -406,9 +398,7 @@ python -m top_fund_managers_mcp build_index
   ```
 
 ### 5. `generate_skill`
-
 复用性引擎（对应 PPT Track C）：传入大 V 姓名，按统一标准生成 Skill 骨架。生成的经理目录会被所有工具自动识别。
-
 - **MCP 参数**：
   - `name: str` — 经理 / 大 V 姓名
   - `company / style / representative: str | None` — 可选补充信息（公司 / 风格 / 代表基金 `code_名称`）
@@ -422,9 +412,7 @@ python -m top_fund_managers_mcp build_index
   ```
 
 ### 6. `fund_lookup`
-
 在全市场约 2.7 万只基金中按名称 / 代码 / 拼音查找基金代码。
-
 - **MCP 参数**：
   - `keyword: str` — 搜索关键词（名称 / 代码 / 拼音）
   - `fund_type: str | None` — 按类型筛选
@@ -437,9 +425,7 @@ python -m top_fund_managers_mcp build_index
   ```
 
 ### 7. `build_index`
-
 重建全部经理的 `corpus_index.json`（扫描语料目录）。
-
 - **MCP**：无参数。
 - **CLI**：`build_index`（别名 `index`）。
 - **何时用**：新增 / 修改语料后，重建索引以保证检索准确。
@@ -470,13 +456,11 @@ build_index.py                                  语料/全市场列表更新后�
 ### Claude / Claude Code 安装
 
 **Windows PowerShell：**
-
 ```powershell
 $dst = "$HOME\.claude\skills\top-fund-managers-views"
 New-Item -ItemType Directory -Force $dst | Out-Null
 Copy-Item -Recurse SKILL.md,README.md,references,scripts $dst
 ```
-
 装好后**完整重启** Claude Code，问一句「张坤怎么看白酒」即可触发。
 
 ### 腾讯 WorkBuddy 安装
@@ -488,7 +472,6 @@ Copy-Item -Recurse SKILL.md,README.md,references,scripts $dst
 ## 十、扩展指南
 
 ### 新增一位基金经理（零代码）
-
 1. 在 `references/managers/` 下新建以经理姓名命名的目录，例如 `references/managers/朱少醒/`。
 2. 放入标准子结构：
    - `method.md`（投资方法框架，建议每条附原话佐证）
@@ -499,7 +482,6 @@ Copy-Item -Recurse SKILL.md,README.md,references,scripts $dst
 4. 完成。`list_managers` / `search_corpus` / `compare_managers` / `score_fund` / `fund_lookup` 等**全部自动识别**，无需改任何代码。
 
 ### 复用引擎 Track C：从大 V 生成 Skill
-
 `generate_skill`（命令 `generate_skill`）可按统一标准，把任意经理 / 大 V 的语料素材一键生成标准化的经理目录骨架（`method.md` / `scorecard.md` / `corpus/` 占位），并给出后续研究清单（`research_checklist`）。加 `--dry-run` 仅预览不落盘，确认后再正式生成。
 
 ### 扩展 web 模块（Fund Insight）
@@ -554,8 +536,6 @@ tfm generate_skill --name 朱少醒 --dry-run
 
 > 这套命令链既是"研究模板"也是"审计轨迹"——每一步都可回溯到原始语料或真实数据，便于你自己复核，也便于向他人说明结论来源。
 
----
-
 ## 十二、数据来源与真实性
 
 - **张坤**：易方达官网（efunds.com.cn）定期报告、天天基金公开数据
@@ -566,35 +546,30 @@ tfm generate_skill --name 朱少醒 --dry-run
 
 均为真实材料、可追溯原文；工具只检索引用、不编造、不杜撰。所有观点引用须忠于原文，拿不准就回到语料，或如实说明「未见」。
 
-> `web/` 模块使用的语料位于其**自带**的 `web/references/managers/`，来源口径与上式一致，但为独立副本，不随根目录更新而自动同步。
+> `web/` 模块使用的语料位于其**自带**的 `web/references/managers/`，来源口径与上述一致，但为独立副本，不随根目录更新而自动同步。
 
 ---
 
 ## 十三、合规、边界与限制
 
 ### 合规与使用前提
-
 - 本库仅限**个人研究 / 学习辅助**使用，**不构成任何投资建议**，不预测涨跌、不给买卖指令、不提供择时。
 - 使用即表示你已知悉并同意：所有结论都**必须由你自己独立判断与承担风险**。
 
 ### 不保证数据可靠
-
 - 语料来自公开披露与媒体报道，**不保证**其**准确性、完整性、及时性**；可能存在遗漏、转述偏差或时点滞后。
 - 基金业绩 / 持仓为**历史数据**，不代表未来表现；抓取类功能（`fetch_*`）依赖第三方网站结构，可能因对方改版而失效或失真。
 - 一切数据请以基金公司官网、交易所、托管行等**一手来源**为准复核。
 
 ### 不盈利 / 不保证收益
-
 - 本库**不承诺、不保证任何收益**，也**不与任何盈利结果挂钩**；任何据此产生的盈亏均与本库及作者无关。
 
 ### 禁止私自传播
-
 - **禁止**将本库（含语料、脚本、衍生 Skill）**私自复制、转售、再分发，或用于任何商业 / 合规敏感用途**。
 - 如需转载、引用或二次创作，须**保留署名与出处**，并遵守各数据来源方（基金公司、媒体、数据商）的使用条款与版权要求。
 - 大规模抓取或对外提供数据可能违反相关网站的服务条款与数据合规要求，请谨慎并自行负责。
 
 ### 内容诚信红线
-
 - 引用须忠于原文；**严禁编造经理未说过的话、严禁改写原文冒充原话**。
 - 推演类结论须明确声明"非经理本人观点"。
 
@@ -604,7 +579,7 @@ tfm generate_skill --name 朱少醒 --dry-run
 
 ## 十四、常见问题（FAQ）
 
-**Q1：Windows PowerShell 一运行就报 `profile.ps1` / `ExecutionPolicies` / `UnauthorizedAccess` 错误？**
+**Q1：Windows PowerShell 一运行就报 `profile.ps1` / `Execution_Policies` / `UnauthorizedAccess` 错误？**
 这是你系统 PowerShell 的**执行策略**噪声，与本项目代码无关，可安全忽略。若要消除，可在普通（非管理员）PowerShell 执行 `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned`。
 
 **Q2：命令行输出中文乱码（方块 / 问号）？**
@@ -619,7 +594,7 @@ tfm generate_skill --name 朱少醒 --dry-run
 运行一次 `tfm build_index` 重建 `corpus_index.json` 即可。
 
 **Q5：`pip install -e .` 装好后 `tfm` 命令找不到？**
-确认你运行 `tfm` 的 Python 环境与执行 `pip install -e .` 的是**同一个**（虚拟环境需先 `activate`）。若仍不方便，可始终用等效的 `python -m top_fund_managers_mcp <子命令>`。
+确认你运行 `tfm` 的 Python 現境与执行 `pip install -e .` 的是**同一个**（虚拟环境需先 `activate`）。若仍不方便，可始终用等效的 `python -m top_fund_managers_mcp <子命令>`。
 
 **Q6：MCP 客户端连不上 server？**
 优先用 `python` 的**绝对路径**写在 `args` 之外（即 `command` 写绝对路径），并确认该环境已 `pip install -e .`。排错时可在终端直接 `python -m top_fund_managers_mcp` 看是否进入 server 模式。
