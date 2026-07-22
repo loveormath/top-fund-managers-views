@@ -1,0 +1,80 @@
+managers:
+  liu-xu:
+    name: 刘旭
+    institution: 大成基金
+    role: 权益基金经理
+    color: "#2563EB"
+    avatar: "/avatars/liu-xu.webp"
+    tags: [长期价值, 制造业, 安全边际]
+    profile_file: references/managers/刘旭/profile.md
+    method_file: references/managers/刘旭/method.md
+    scorecard_file: references/managers/刘旭/scorecard.md
+    corpus_dir: references/managers/刘旭/corpus
+    fund_data_dir: references/managers/刘旭/fund_data
+    representative_funds:
+      - {code: "000628", name: 大成高鑫股票A}
+      - {code: "008271", name: 大成优势企业混合A}
+      - {code: "010929", name: 大成核心价值甄选混合A}
+  zhang-kun:
+    name: 张坤
+    institution: 易方达基金
+    role: 权益基金经理
+    color: "#4F46E5"
+    avatar: "/avatars/zhang-kun.webp"
+    tags: [价值投资, 高质量成长, 长期持有]
+    profile_file: references/managers/张坤/profile.md
+    method_file: references/managers/张坤/method.md
+    scorecard_file: references/managers/张坤/scorecard.md
+    corpus_dir: references/managers/张坤/corpus
+    fund_data_dir: references/managers/张坤/fund_data
+    representative_funds:
+      - {code: "005827", name: 易方达蓝筹精选混合}
+      - {code: "110011", name: 易方达优质精选混合}
+      - {code: "118001", name: 易方达亚洲精选股票}
+  zhang-lu:
+    name: 张璐
+    institution: 永赢基金
+    role: 指数与量化投资基金经理
+    color: "#7C3AED"
+    avatar: "/avatars/zhang-lu.webp"
+    tags: [先进制造, 机器人, 产业趋势]
+    profile_file: references/managers/张璐/profile.md
+    method_file: references/managers/张璐/method.md
+    scorecard_file: references/managers/张璐/scorecard.md
+    corpus_dir: references/managers/张璐/corpus
+    fund_data_dir: references/managers/张璐/fund_data
+    representative_funds:
+      - {code: "018124", name: 永赢先进制造智选混合发起A}
+      - {code: "024774", name: 永赢上证科创板人工智能指数发起A}
+  xie-zhi-yu:
+    name: 谢治宇
+    institution: 兴证全球基金
+    role: 副总经理、投资总监
+    color: "#0EA5E9"
+    avatar: "/avatars/xie-zhi-yu.webp"
+    tags: [自下而上, 均衡配置, 性价比]
+    profile_file: references/managers/谢治宇/profile.md
+    method_file: references/managers/谢治宇/method.md
+    scorecard_file: references/managers/谢治宇/scorecard.md
+    corpus_dir: references/managers/谢治宇/corpus
+    fund_data_dir: references/managers/谢治宇/fund_data
+    representative_funds:
+      - {code: "163406", name: 兴全合润混合}
+      - {code: "163417", name: 兴全合宜混合}
+      - {code: "008378", name: 兴全社会价值三年持有}
+      - {code: "163402", name: 兴全趋势投资混合}
+  zhao-yi:
+    name: 赵诣
+    institution: 泉果基金
+    role: 总经理助理、公募投资部总经理
+    color: "#10B981"
+    avatar: "/avatars/zhao-yi.webp"
+    tags: [高端制造, 成长投资, 竞争格局]
+    profile_file: references/managers/赵诣/profile.md
+    method_file: references/managers/赵诣/method.md
+    scorecard_file: references/managers/赵诣/scorecard.md
+    corpus_dir: references/managers/赵诣/corpus
+    fund_data_dir: references/managers/赵诣/fund_data
+    representative_funds:
+      - {code: "016709", name: 泉果旭源三年持有期混合}
+      - {code: "002190", name: 农银汇理新能源主题混合}

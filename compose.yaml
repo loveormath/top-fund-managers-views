@@ -1,0 +1,35 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      APP_ENCRYPTION_KEY: ${APP_ENCRYPTION_KEY:-}
+      FUND_INSIGHT_AUTO_INDEX: ${FUND_INSIGHT_AUTO_INDEX:-1}
+      FUND_INSIGHT_EMBEDDING_MODEL: ${FUND_INSIGHT_EMBEDDING_MODEL:-BAAI/bge-small-zh-v1.5}
+    volumes:
+      - fund_insight_data:/data
+      - fund_insight_models:/models
+      - ./references:/app/references:ro
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/health', timeout=2)"]
+      interval: 20s
+      timeout: 5s
+      retries: 8
+      start_period: 20s
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:${FUND_INSIGHT_PORT:-8080}:80"
+    restart: unless-stopped
+
+volumes:
+  fund_insight_data:
+  fund_insight_models:
