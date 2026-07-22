@@ -1,0 +1,24 @@
+{
+  "fund_code": "163417",
+  "fund_name": "兴全合宜灵活配置混合型证券投资基金",
+  "quarters": {
+    "2026Q1": {
+      "report_date": "2026-03-31",
+      "top_10": [
+        {"stock_code": "600160.SH", "stock_name": "巨化股份", "weight": null, "change": "增持"},
+        {"stock_code": "688120.SH", "stock_name": "华海清科", "weight": null, "change": "增持"},
+        {"stock_code": "300308.SZ", "stock_name": "中际旭创", "weight": null, "change": "减持"},
+        {"stock_code": "300750.SZ", "stock_name": "宁德时代", "weight": null, "change": "减持"}
+      ],
+      "notes": "仓位从年初92.96%降至84.93%"
+    },
+    "2021Q4": {
+      "report_date": "2021-12-31",
+      "top_10": [
+        {"stock_code": "600690.SH", "stock_name": "海尔智家", "weight": null, "change": null},
+        {"stock_code": "01024.HK", "stock_name": "快手-W", "weight": null, "change": "新进，跃升至第二大重仓"},
+        {"stock_code": "600745.SH", "stock_name": "闻泰科技", "weight": null, "change": "新进"}
+      ]
+    }
+  }
+}

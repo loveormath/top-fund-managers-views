@@ -1,0 +1,30 @@
+{
+  "folder": "定期报告",
+  "description": "兴全合润混合型证券投资基金各季度/年度报告运作分析原文摘录",
+  "total_count": 22,
+  "time_range": "2020-12-31 ~ 2026-03-31",
+  "files": [
+    {"file":"01_20210331_163406_2020年报.md","period":"2020年报","id":"xzy_official_2020_annual"},
+    {"file":"02_20210421_163406_2021一季报.md","period":"2021Q1","id":"xzy_official_2021_q1"},
+    {"file":"03_20210720_163406_2021二季报.md","period":"2021Q2","id":"xzy_official_2021_q2"},
+    {"file":"04_20211027_163406_2021三季报.md","period":"2021Q3","id":"xzy_official_2021_q3"},
+    {"file":"05_20220124_163406_2021四季报.md","period":"2021Q4","id":"xzy_official_2021_q4"},
+    {"file":"06_20220421_163406_2022一季报.md","period":"2022Q1","id":"xzy_official_2022_q1"},
+    {"file":"07_20220719_163406_2022二季报.md","period":"2022Q2","id":"xzy_official_2022_q2"},
+    {"file":"08_20221026_163406_2022三季报.md","period":"2022Q3","id":"xzy_official_2022_q3"},
+    {"file":"09_20230331_163406_2022年报.md","period":"2022年报","id":"xzy_official_2022_annual"},
+    {"file":"10_20230422_163406_2023一季报.md","period":"2023Q1","id":"xzy_official_2023_q1"},
+    {"file":"11_20230825_163406_2023中报.md","period":"2023中报","id":"xzy_official_2023_mid"},
+    {"file":"12_20231026_163406_2023三季报.md","period":"2023Q3","id":"xzy_official_2023_q3"},
+    {"file":"13_20240328_163406_2023年报.md","period":"2023年报","id":"xzy_official_2023_annual"},
+    {"file":"14_20240420_163406_2024一季报.md","period":"2024Q1","id":"xzy_official_2024_q1"},
+    {"file":"15_20240718_163406_2024二季报.md","period":"2024Q2","id":"xzy_official_2024_q2"},
+    {"file":"16_20241024_163406_2024三季报.md","period":"2024Q3","id":"xzy_official_2024_q3"},
+    {"file":"17_20250330_163406_2024年报.md","period":"2024年报","id":"xzy_official_2024_annual"},
+    {"file":"18_20250422_163406_2025一季报.md","period":"2025Q1","id":"xzy_official_2025_q1"},
+    {"file":"19_20250820_163406_2025中报.md","period":"2025中报","id":"xzy_official_2025_mid"},
+    {"file":"20_20251028_163406_2025三季报.md","period":"2025Q3","id":"xzy_official_2025_q3"},
+    {"file":"21_20260122_163406_2025年报.md","period":"2025年报","id":"xzy_official_2025_annual"},
+    {"file":"22_20260421_163406_2026一季报.md","period":"2026Q1","id":"xzy_official_2026_q1"}
+  ]
+}

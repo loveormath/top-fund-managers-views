@@ -1,0 +1,989 @@
+{
+  "manager": "赵诣",
+  "fund_code": "002190",
+  "fund_name": "农银汇理新能源主题混合",
+  "manager_relation": "former",
+  "manager_period": "2019-08-20至2022-03-23",
+  "collected_at": "2026-07-11",
+  "quarters": [
+    {
+      "report_period": "2019Q3",
+      "published_at": "2019-10-25",
+      "manager_period_note": "赵诣于本季度内开始管理，本季度为部分任期。",
+      "top_holdings": [
+        {
+          "rank": 1,
+          "stock_code": "000733",
+          "stock_name": "振华科技",
+          "shares": 314500,
+          "market_value_yuan": 4994260.0,
+          "nav_weight_pct": 7.9
+        },
+        {
+          "rank": 2,
+          "stock_code": "601012",
+          "stock_name": "隆基股份",
+          "shares": 189670,
+          "market_value_yuan": 4975044.1,
+          "nav_weight_pct": 7.87
+        },
+        {
+          "rank": 3,
+          "stock_code": "600438",
+          "stock_name": "通威股份",
+          "shares": 343242,
+          "market_value_yuan": 4372903.08,
+          "nav_weight_pct": 6.92
+        },
+        {
+          "rank": 4,
+          "stock_code": "603308",
+          "stock_name": "应流股份",
+          "shares": 323700,
+          "market_value_yuan": 4030065.0,
+          "nav_weight_pct": 6.38
+        },
+        {
+          "rank": 5,
+          "stock_code": "002475",
+          "stock_name": "立讯精密",
+          "shares": 123950,
+          "market_value_yuan": 3316902.0,
+          "nav_weight_pct": 5.25
+        },
+        {
+          "rank": 6,
+          "stock_code": "300450",
+          "stock_name": "先导智能",
+          "shares": 96400,
+          "market_value_yuan": 3248680.0,
+          "nav_weight_pct": 5.14
+        },
+        {
+          "rank": 7,
+          "stock_code": "000977",
+          "stock_name": "浪潮信息",
+          "shares": 113200,
+          "market_value_yuan": 2909240.0,
+          "nav_weight_pct": 4.6
+        },
+        {
+          "rank": 8,
+          "stock_code": "002129",
+          "stock_name": "中环股份",
+          "shares": 219700,
+          "market_value_yuan": 2660567.0,
+          "nav_weight_pct": 4.21
+        },
+        {
+          "rank": 9,
+          "stock_code": "300274",
+          "stock_name": "阳光电源",
+          "shares": 204500,
+          "market_value_yuan": 2310850.0,
+          "nav_weight_pct": 3.66
+        },
+        {
+          "rank": 10,
+          "stock_code": "300316",
+          "stock_name": "晶盛机电",
+          "shares": 149800,
+          "market_value_yuan": 2230522.0,
+          "nav_weight_pct": 3.53
+        }
+      ],
+      "source_url": "https://fund.eastmoney.com/gonggao/002190,AN201910251369758092.html",
+      "source_pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN201910251369758092_1.pdf"
+    },
+    {
+      "report_period": "2019Q4",
+      "published_at": "2020-01-21",
+      "manager_period_note": "本报告期处于赵诣的完整任期内。",
+      "top_holdings": [
+        {
+          "rank": 1,
+          "stock_code": "603308",
+          "stock_name": "应流股份",
+          "shares": 394400,
+          "market_value_yuan": 5919944.0,
+          "nav_weight_pct": 8.17
+        },
+        {
+          "rank": 2,
+          "stock_code": "601012",
+          "stock_name": "隆基股份",
+          "shares": 211570,
+          "market_value_yuan": 5253283.1,
+          "nav_weight_pct": 7.25
+        },
+        {
+          "rank": 3,
+          "stock_code": "300750",
+          "stock_name": "宁德时代",
+          "shares": 48400,
+          "market_value_yuan": 5149760.0,
+          "nav_weight_pct": 7.1
+        },
+        {
+          "rank": 4,
+          "stock_code": "600438",
+          "stock_name": "通威股份",
+          "shares": 385942,
+          "market_value_yuan": 5067418.46,
+          "nav_weight_pct": 6.99
+        },
+        {
+          "rank": 5,
+          "stock_code": "300037",
+          "stock_name": "新宙邦",
+          "shares": 126100,
+          "market_value_yuan": 4582474.0,
+          "nav_weight_pct": 6.32
+        },
+        {
+          "rank": 6,
+          "stock_code": "300450",
+          "stock_name": "先导智能",
+          "shares": 99000,
+          "market_value_yuan": 4449060.0,
+          "nav_weight_pct": 6.14
+        },
+        {
+          "rank": 7,
+          "stock_code": "603659",
+          "stock_name": "璞泰来",
+          "shares": 51400,
+          "market_value_yuan": 4376710.0,
+          "nav_weight_pct": 6.04
+        },
+        {
+          "rank": 8,
+          "stock_code": "000733",
+          "stock_name": "振华科技",
+          "shares": 202400,
+          "market_value_yuan": 3471160.0,
+          "nav_weight_pct": 4.79
+        },
+        {
+          "rank": 9,
+          "stock_code": "603799",
+          "stock_name": "华友钴业",
+          "shares": 85100,
+          "market_value_yuan": 3352089.0,
+          "nav_weight_pct": 4.62
+        },
+        {
+          "rank": 10,
+          "stock_code": "002460",
+          "stock_name": "赣锋锂业",
+          "shares": 92100,
+          "market_value_yuan": 3207843.0,
+          "nav_weight_pct": 4.43
+        }
+      ],
+      "source_url": "https://fund.eastmoney.com/gonggao/002190,AN202001211374410294.html",
+      "source_pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202001211374410294_1.pdf"
+    },
+    {
+      "report_period": "2020Q1",
+      "published_at": "2020-04-22",
+      "manager_period_note": "本报告期处于赵诣的完整任期内。",
+      "top_holdings": [
+        {
+          "rank": 1,
+          "stock_code": "300750",
+          "stock_name": "宁德时代",
+          "shares": 124000,
+          "market_value_yuan": 14928360.0,
+          "nav_weight_pct": 8.55
+        },
+        {
+          "rank": 2,
+          "stock_code": "002460",
+          "stock_name": "赣锋锂业",
+          "shares": 360450,
+          "market_value_yuan": 14508112.5,
+          "nav_weight_pct": 8.31
+        },
+        {
+          "rank": 3,
+          "stock_code": "300427",
+          "stock_name": "红相股份",
+          "shares": 842620,
+          "market_value_yuan": 14029623.0,
+          "nav_weight_pct": 8.03
+        },
+        {
+          "rank": 4,
+          "stock_code": "300450",
+          "stock_name": "先导智能",
+          "shares": 357800,
+          "market_value_yuan": 13403188.0,
+          "nav_weight_pct": 7.67
+        },
+        {
+          "rank": 5,
+          "stock_code": "603308",
+          "stock_name": "应流股份",
+          "shares": 980500,
+          "market_value_yuan": 13295580.0,
+          "nav_weight_pct": 7.61
+        },
+        {
+          "rank": 6,
+          "stock_code": "000733",
+          "stock_name": "振华科技",
+          "shares": 693500,
+          "market_value_yuan": 13023930.0,
+          "nav_weight_pct": 7.46
+        },
+        {
+          "rank": 7,
+          "stock_code": "601012",
+          "stock_name": "隆基股份",
+          "shares": 491502,
+          "market_value_yuan": 12208909.68,
+          "nav_weight_pct": 6.99
+        },
+        {
+          "rank": 8,
+          "stock_code": "600438",
+          "stock_name": "通威股份",
+          "shares": 961642,
+          "market_value_yuan": 11164663.62,
+          "nav_weight_pct": 6.39
+        },
+        {
+          "rank": 9,
+          "stock_code": "300037",
+          "stock_name": "新宙邦",
+          "shares": 307800,
+          "market_value_yuan": 11003850.0,
+          "nav_weight_pct": 6.3
+        },
+        {
+          "rank": 10,
+          "stock_code": "603659",
+          "stock_name": "璞泰来",
+          "shares": 148800,
+          "market_value_yuan": 8928000.0,
+          "nav_weight_pct": 5.11
+        }
+      ],
+      "source_url": "https://fund.eastmoney.com/gonggao/002190,AN202004221378390410.html",
+      "source_pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202004221378390410_1.pdf"
+    },
+    {
+      "report_period": "2020Q2",
+      "published_at": "2020-07-20",
+      "manager_period_note": "本报告期处于赵诣的完整任期内。",
+      "top_holdings": [
+        {
+          "rank": 1,
+          "stock_code": "601012",
+          "stock_name": "隆基股份",
+          "shares": 441402,
+          "market_value_yuan": 17978303.46,
+          "nav_weight_pct": 8.05
+        },
+        {
+          "rank": 2,
+          "stock_code": "600438",
+          "stock_name": "通威股份",
+          "shares": 1022842,
+          "market_value_yuan": 17776993.96,
+          "nav_weight_pct": 7.96
+        },
+        {
+          "rank": 3,
+          "stock_code": "603308",
+          "stock_name": "应流股份",
+          "shares": 870600,
+          "market_value_yuan": 17760240.0,
+          "nav_weight_pct": 7.95
+        },
+        {
+          "rank": 4,
+          "stock_code": "300750",
+          "stock_name": "宁德时代",
+          "shares": 101000,
+          "market_value_yuan": 17610360.0,
+          "nav_weight_pct": 7.88
+        },
+        {
+          "rank": 5,
+          "stock_code": "002460",
+          "stock_name": "赣锋锂业",
+          "shares": 318250,
+          "market_value_yuan": 17048652.5,
+          "nav_weight_pct": 7.63
+        },
+        {
+          "rank": 6,
+          "stock_code": "300037",
+          "stock_name": "新宙邦",
+          "shares": 301700,
+          "market_value_yuan": 16611602.0,
+          "nav_weight_pct": 7.44
+        },
+        {
+          "rank": 7,
+          "stock_code": "603659",
+          "stock_name": "璞泰来",
+          "shares": 148200,
+          "market_value_yuan": 15267564.0,
+          "nav_weight_pct": 6.83
+        },
+        {
+          "rank": 8,
+          "stock_code": "300073",
+          "stock_name": "当升科技",
+          "shares": 453100,
+          "market_value_yuan": 14984017.0,
+          "nav_weight_pct": 6.71
+        },
+        {
+          "rank": 9,
+          "stock_code": "002850",
+          "stock_name": "科达利",
+          "shares": 216000,
+          "market_value_yuan": 14947200.0,
+          "nav_weight_pct": 6.69
+        },
+        {
+          "rank": 10,
+          "stock_code": "002709",
+          "stock_name": "天赐材料",
+          "shares": 381380,
+          "market_value_yuan": 12886830.2,
+          "nav_weight_pct": 5.77
+        }
+      ],
+      "source_url": "https://fund.eastmoney.com/gonggao/002190,AN202007201392876170.html",
+      "source_pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202007201392876170_1.pdf"
+    },
+    {
+      "report_period": "2020Q3",
+      "published_at": "2020-10-27",
+      "manager_period_note": "本报告期处于赵诣的完整任期内。",
+      "top_holdings": [
+        {
+          "rank": 1,
+          "stock_code": "300750",
+          "stock_name": "宁德时代",
+          "shares": 781774,
+          "market_value_yuan": 163547120.8,
+          "nav_weight_pct": 7.91
+        },
+        {
+          "rank": 2,
+          "stock_code": "603308",
+          "stock_name": "应流股份",
+          "shares": 5684700,
+          "market_value_yuan": 160024305.0,
+          "nav_weight_pct": 7.74
+        },
+        {
+          "rank": 3,
+          "stock_code": "000733",
+          "stock_name": "振华科技",
+          "shares": 3524915,
+          "market_value_yuan": 157916192.0,
+          "nav_weight_pct": 7.64
+        },
+        {
+          "rank": 4,
+          "stock_code": "002460",
+          "stock_name": "赣锋锂业",
+          "shares": 2803353,
+          "market_value_yuan": 151913699.07,
+          "nav_weight_pct": 7.35
+        },
+        {
+          "rank": 5,
+          "stock_code": "600438",
+          "stock_name": "通威股份",
+          "shares": 5496835,
+          "market_value_yuan": 146105874.3,
+          "nav_weight_pct": 7.07
+        },
+        {
+          "rank": 6,
+          "stock_code": "601012",
+          "stock_name": "隆基股份",
+          "shares": 1870688,
+          "market_value_yuan": 140320306.88,
+          "nav_weight_pct": 6.79
+        },
+        {
+          "rank": 7,
+          "stock_code": "300037",
+          "stock_name": "新宙邦",
+          "shares": 1988917,
+          "market_value_yuan": 113567160.7,
+          "nav_weight_pct": 5.49
+        },
+        {
+          "rank": 8,
+          "stock_code": "300073",
+          "stock_name": "当升科技",
+          "shares": 2514200,
+          "market_value_yuan": 113139000.0,
+          "nav_weight_pct": 5.47
+        },
+        {
+          "rank": 9,
+          "stock_code": "603659",
+          "stock_name": "璞泰来",
+          "shares": 1041083,
+          "market_value_yuan": 113051202.97,
+          "nav_weight_pct": 5.47
+        },
+        {
+          "rank": 10,
+          "stock_code": "002709",
+          "stock_name": "天赐材料",
+          "shares": 2125277,
+          "market_value_yuan": 109876820.9,
+          "nav_weight_pct": 5.31
+        }
+      ],
+      "source_url": "https://fund.eastmoney.com/gonggao/002190,AN202010271423960576.html",
+      "source_pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202010271423960576_1.pdf"
+    },
+    {
+      "report_period": "2020Q4",
+      "published_at": "2021-01-21",
+      "manager_period_note": "本报告期处于赵诣的完整任期内。",
+      "top_holdings": [
+        {
+          "rank": 1,
+          "stock_code": "300750",
+          "stock_name": "宁德时代",
+          "shares": 3300328,
+          "market_value_yuan": 1158778164.08,
+          "nav_weight_pct": 7.57
+        },
+        {
+          "rank": 2,
+          "stock_code": "002460",
+          "stock_name": "赣锋锂业",
+          "shares": 11091826,
+          "market_value_yuan": 1122492791.2,
+          "nav_weight_pct": 7.33
+        },
+        {
+          "rank": 3,
+          "stock_code": "300073",
+          "stock_name": "当升科技",
+          "shares": 14371601,
+          "market_value_yuan": 931998324.85,
+          "nav_weight_pct": 6.09
+        },
+        {
+          "rank": 4,
+          "stock_code": "601012",
+          "stock_name": "隆基股份",
+          "shares": 10089288,
+          "market_value_yuan": 930232353.6,
+          "nav_weight_pct": 6.07
+        },
+        {
+          "rank": 5,
+          "stock_code": "600438",
+          "stock_name": "通威股份",
+          "shares": 23828895,
+          "market_value_yuan": 915982723.8,
+          "nav_weight_pct": 5.98
+        },
+        {
+          "rank": 6,
+          "stock_code": "000733",
+          "stock_name": "振华科技",
+          "shares": 15107986,
+          "market_value_yuan": 889104976.1,
+          "nav_weight_pct": 5.81
+        },
+        {
+          "rank": 7,
+          "stock_code": "002709",
+          "stock_name": "天赐材料",
+          "shares": 8216635,
+          "market_value_yuan": 852886713.0,
+          "nav_weight_pct": 5.57
+        },
+        {
+          "rank": 8,
+          "stock_code": "300037",
+          "stock_name": "新宙邦",
+          "shares": 8068933,
+          "market_value_yuan": 818189806.2,
+          "nav_weight_pct": 5.34
+        },
+        {
+          "rank": 9,
+          "stock_code": "603659",
+          "stock_name": "璞泰来",
+          "shares": 6175905,
+          "market_value_yuan": 694109962.95,
+          "nav_weight_pct": 4.53
+        },
+        {
+          "rank": 10,
+          "stock_code": "002850",
+          "stock_name": "科达利",
+          "shares": 6245022,
+          "market_value_yuan": 582034611.54,
+          "nav_weight_pct": 3.8
+        }
+      ],
+      "source_url": "https://fund.eastmoney.com/gonggao/002190,AN202101211452770346.html",
+      "source_pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202101211452770346_1.pdf"
+    },
+    {
+      "report_period": "2021Q1",
+      "published_at": "2021-04-21",
+      "manager_period_note": "本报告期处于赵诣的完整任期内。",
+      "top_holdings": [
+        {
+          "rank": 1,
+          "stock_code": "300750",
+          "stock_name": "宁德时代",
+          "shares": 2926305,
+          "market_value_yuan": 942767681.85,
+          "nav_weight_pct": 8.08
+        },
+        {
+          "rank": 2,
+          "stock_code": "603659",
+          "stock_name": "璞泰来",
+          "shares": 9846488,
+          "market_value_yuan": 935416360.0,
+          "nav_weight_pct": 8.02
+        },
+        {
+          "rank": 3,
+          "stock_code": "000733",
+          "stock_name": "振华科技",
+          "shares": 17052267,
+          "market_value_yuan": 931053778.2,
+          "nav_weight_pct": 7.98
+        },
+        {
+          "rank": 4,
+          "stock_code": "300037",
+          "stock_name": "新宙邦",
+          "shares": 11947180,
+          "market_value_yuan": 913242439.2,
+          "nav_weight_pct": 7.83
+        },
+        {
+          "rank": 5,
+          "stock_code": "300073",
+          "stock_name": "当升科技",
+          "shares": 18953602,
+          "market_value_yuan": 897832126.74,
+          "nav_weight_pct": 7.7
+        },
+        {
+          "rank": 6,
+          "stock_code": "002709",
+          "stock_name": "天赐材料",
+          "shares": 10902047,
+          "market_value_yuan": 889716055.67,
+          "nav_weight_pct": 7.63
+        },
+        {
+          "rank": 7,
+          "stock_code": "002460",
+          "stock_name": "赣锋锂业",
+          "shares": 8302394,
+          "market_value_yuan": 782583658.44,
+          "nav_weight_pct": 6.71
+        },
+        {
+          "rank": 8,
+          "stock_code": "601012",
+          "stock_name": "隆基股份",
+          "shares": 8559887,
+          "market_value_yuan": 753270056.0,
+          "nav_weight_pct": 6.46
+        },
+        {
+          "rank": 9,
+          "stock_code": "603308",
+          "stock_name": "应流股份",
+          "shares": 22308330,
+          "market_value_yuan": 587378328.9,
+          "nav_weight_pct": 5.03
+        },
+        {
+          "rank": 10,
+          "stock_code": "002812",
+          "stock_name": "恩捷股份",
+          "shares": 4979639,
+          "market_value_yuan": 557321196.88,
+          "nav_weight_pct": 4.78
+        }
+      ],
+      "source_url": "https://fund.eastmoney.com/gonggao/002190,AN202104211486829959.html",
+      "source_pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202104211486829959_1.pdf"
+    },
+    {
+      "report_period": "2021Q2",
+      "published_at": "2021-07-20",
+      "manager_period_note": "本报告期处于赵诣的完整任期内。",
+      "top_holdings": [
+        {
+          "rank": 1,
+          "stock_code": "300750",
+          "stock_name": "宁德时代",
+          "shares": 3058880,
+          "market_value_yuan": 1635889024.0,
+          "nav_weight_pct": 8.22
+        },
+        {
+          "rank": 2,
+          "stock_code": "603659",
+          "stock_name": "璞泰来",
+          "shares": 11731396,
+          "market_value_yuan": 1602508693.6,
+          "nav_weight_pct": 8.05
+        },
+        {
+          "rank": 3,
+          "stock_code": "002812",
+          "stock_name": "恩捷股份",
+          "shares": 6576060,
+          "market_value_yuan": 1539455646.0,
+          "nav_weight_pct": 7.74
+        },
+        {
+          "rank": 4,
+          "stock_code": "000733",
+          "stock_name": "振华科技",
+          "shares": 24986482,
+          "market_value_yuan": 1525924455.74,
+          "nav_weight_pct": 7.67
+        },
+        {
+          "rank": 5,
+          "stock_code": "002460",
+          "stock_name": "赣锋锂业",
+          "shares": 12325169,
+          "market_value_yuan": 1492454714.21,
+          "nav_weight_pct": 7.5
+        },
+        {
+          "rank": 6,
+          "stock_code": "300037",
+          "stock_name": "新宙邦",
+          "shares": 14781877,
+          "market_value_yuan": 1479665887.7,
+          "nav_weight_pct": 7.44
+        },
+        {
+          "rank": 7,
+          "stock_code": "002709",
+          "stock_name": "天赐材料",
+          "shares": 13566476,
+          "market_value_yuan": 1445915012.08,
+          "nav_weight_pct": 7.27
+        },
+        {
+          "rank": 8,
+          "stock_code": "601012",
+          "stock_name": "隆基股份",
+          "shares": 15043727,
+          "market_value_yuan": 1336484706.68,
+          "nav_weight_pct": 6.72
+        },
+        {
+          "rank": 9,
+          "stock_code": "300073",
+          "stock_name": "当升科技",
+          "shares": 21775656,
+          "market_value_yuan": 1223574110.64,
+          "nav_weight_pct": 6.15
+        },
+        {
+          "rank": 10,
+          "stock_code": "603308",
+          "stock_name": "应流股份",
+          "shares": 31231662,
+          "market_value_yuan": 644933820.3,
+          "nav_weight_pct": 3.24
+        }
+      ],
+      "source_url": "https://fund.eastmoney.com/gonggao/002190,AN202107201504957835.html",
+      "source_pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202107201504957835_1.pdf"
+    },
+    {
+      "report_period": "2021Q3",
+      "published_at": "2021-10-26",
+      "manager_period_note": "本报告期处于赵诣的完整任期内。",
+      "top_holdings": [
+        {
+          "rank": 1,
+          "stock_code": "300750",
+          "stock_name": "宁德时代",
+          "shares": 3962881,
+          "market_value_yuan": 2083405428.13,
+          "nav_weight_pct": 8.04
+        },
+        {
+          "rank": 2,
+          "stock_code": "002709",
+          "stock_name": "天赐材料",
+          "shares": 13060803,
+          "market_value_yuan": 1986809352.36,
+          "nav_weight_pct": 7.67
+        },
+        {
+          "rank": 3,
+          "stock_code": "300037",
+          "stock_name": "新宙邦",
+          "shares": 12795539,
+          "market_value_yuan": 1983308545.0,
+          "nav_weight_pct": 7.65
+        },
+        {
+          "rank": 4,
+          "stock_code": "002812",
+          "stock_name": "恩捷股份",
+          "shares": 6596846,
+          "market_value_yuan": 1847908501.52,
+          "nav_weight_pct": 7.13
+        },
+        {
+          "rank": 5,
+          "stock_code": "000733",
+          "stock_name": "振华科技",
+          "shares": 18428480,
+          "market_value_yuan": 1846902265.6,
+          "nav_weight_pct": 7.13
+        },
+        {
+          "rank": 6,
+          "stock_code": "603659",
+          "stock_name": "璞泰来",
+          "shares": 10432841,
+          "market_value_yuan": 1794448652.0,
+          "nav_weight_pct": 6.92
+        },
+        {
+          "rank": 7,
+          "stock_code": "300073",
+          "stock_name": "当升科技",
+          "shares": 20369125,
+          "market_value_yuan": 1672305162.5,
+          "nav_weight_pct": 6.45
+        },
+        {
+          "rank": 8,
+          "stock_code": "002460",
+          "stock_name": "赣锋锂业",
+          "shares": 9586269,
+          "market_value_yuan": 1561986670.86,
+          "nav_weight_pct": 6.03
+        },
+        {
+          "rank": 9,
+          "stock_code": "601012",
+          "stock_name": "隆基股份",
+          "shares": 16360627,
+          "market_value_yuan": 1349424514.96,
+          "nav_weight_pct": 5.21
+        },
+        {
+          "rank": 10,
+          "stock_code": "688388",
+          "stock_name": "嘉元科技",
+          "shares": 7752824,
+          "market_value_yuan": 1101753818.64,
+          "nav_weight_pct": 4.25
+        }
+      ],
+      "source_url": "https://fund.eastmoney.com/gonggao/002190,AN202110261525054439.html",
+      "source_pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202110261525054439_1.pdf"
+    },
+    {
+      "report_period": "2021Q4",
+      "published_at": "2022-01-21",
+      "manager_period_note": "本报告期处于赵诣的完整任期内。",
+      "top_holdings": [
+        {
+          "rank": 1,
+          "stock_code": "300750",
+          "stock_name": "宁德时代",
+          "shares": 3864787,
+          "market_value_yuan": 2272494756.0,
+          "nav_weight_pct": 7.9
+        },
+        {
+          "rank": 2,
+          "stock_code": "603659",
+          "stock_name": "璞泰来",
+          "shares": 13978905,
+          "market_value_yuan": 2245151932.05,
+          "nav_weight_pct": 7.81
+        },
+        {
+          "rank": 3,
+          "stock_code": "002709",
+          "stock_name": "天赐材料",
+          "shares": 18391989,
+          "market_value_yuan": 2108641538.85,
+          "nav_weight_pct": 7.33
+        },
+        {
+          "rank": 4,
+          "stock_code": "000733",
+          "stock_name": "振华科技",
+          "shares": 16858467,
+          "market_value_yuan": 2095170278.76,
+          "nav_weight_pct": 7.29
+        },
+        {
+          "rank": 5,
+          "stock_code": "002812",
+          "stock_name": "恩捷股份",
+          "shares": 8265285,
+          "market_value_yuan": 2069627364.0,
+          "nav_weight_pct": 7.2
+        },
+        {
+          "rank": 6,
+          "stock_code": "300073",
+          "stock_name": "当升科技",
+          "shares": 21895150,
+          "market_value_yuan": 1902031680.5,
+          "nav_weight_pct": 6.62
+        },
+        {
+          "rank": 7,
+          "stock_code": "300037",
+          "stock_name": "新宙邦",
+          "shares": 16579362,
+          "market_value_yuan": 1873467906.0,
+          "nav_weight_pct": 6.52
+        },
+        {
+          "rank": 8,
+          "stock_code": "600745",
+          "stock_name": "闻泰科技",
+          "shares": 10824892,
+          "market_value_yuan": 1399658535.6,
+          "nav_weight_pct": 4.87
+        },
+        {
+          "rank": 9,
+          "stock_code": "601012",
+          "stock_name": "隆基股份",
+          "shares": 15498827,
+          "market_value_yuan": 1335998887.4,
+          "nav_weight_pct": 4.65
+        },
+        {
+          "rank": 10,
+          "stock_code": "002460",
+          "stock_name": "赣锋锂业",
+          "shares": 8594669,
+          "market_value_yuan": 1227748466.65,
+          "nav_weight_pct": 4.27
+        }
+      ],
+      "source_url": "https://fund.eastmoney.com/gonggao/002190,AN202201211541688791.html",
+      "source_pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202201211541688791_1.pdf"
+    },
+    {
+      "report_period": "2022Q1",
+      "published_at": "2022-04-21",
+      "manager_period_note": "赵诣于 2022-03-23 离任，本季度为部分任期。",
+      "top_holdings": [
+        {
+          "rank": 1,
+          "stock_code": "300750",
+          "stock_name": "宁德时代",
+          "shares": 3446587,
+          "market_value_yuan": 1765686520.1,
+          "nav_weight_pct": 7.87
+        },
+        {
+          "rank": 2,
+          "stock_code": "000733",
+          "stock_name": "振华科技",
+          "shares": 15064380,
+          "market_value_yuan": 1708300692.0,
+          "nav_weight_pct": 7.61
+        },
+        {
+          "rank": 3,
+          "stock_code": "603659",
+          "stock_name": "璞泰来",
+          "shares": 12038205,
+          "market_value_yuan": 1691849330.7,
+          "nav_weight_pct": 7.54
+        },
+        {
+          "rank": 4,
+          "stock_code": "300073",
+          "stock_name": "当升科技",
+          "shares": 20745707,
+          "market_value_yuan": 1560077166.4,
+          "nav_weight_pct": 6.95
+        },
+        {
+          "rank": 5,
+          "stock_code": "002709",
+          "stock_name": "天赐材料",
+          "shares": 16134983,
+          "market_value_yuan": 1516688402.0,
+          "nav_weight_pct": 6.76
+        },
+        {
+          "rank": 6,
+          "stock_code": "002812",
+          "stock_name": "恩捷股份",
+          "shares": 6720060,
+          "market_value_yuan": 1478413200.0,
+          "nav_weight_pct": 6.59
+        },
+        {
+          "rank": 7,
+          "stock_code": "300037",
+          "stock_name": "新宙邦",
+          "shares": 15935819,
+          "market_value_yuan": 1299566039.45,
+          "nav_weight_pct": 5.79
+        },
+        {
+          "rank": 8,
+          "stock_code": "601012",
+          "stock_name": "隆基股份",
+          "shares": 15017427,
+          "market_value_yuan": 1084108055.13,
+          "nav_weight_pct": 4.83
+        },
+        {
+          "rank": 9,
+          "stock_code": "002850",
+          "stock_name": "科达利",
+          "shares": 6920541,
+          "market_value_yuan": 1024240068.0,
+          "nav_weight_pct": 4.57
+        },
+        {
+          "rank": 10,
+          "stock_code": "600745",
+          "stock_name": "闻泰科技",
+          "shares": 10582292,
+          "market_value_yuan": 860340339.6,
+          "nav_weight_pct": 3.83
+        }
+      ],
+      "source_url": "https://fund.eastmoney.com/gonggao/002190,AN202204211560638380.html",
+      "source_pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202204211560638380_1.pdf"
+    }
+  ]
+}

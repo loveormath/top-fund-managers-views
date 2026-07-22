@@ -1,0 +1,336 @@
+{
+  "fund_code": "163406",
+  "fund_name": "兴全合润混合型证券投资基金",
+  "quarters": {
+    "2026Q1": {
+      "report_date": "2026-03-31",
+      "top_10": [
+        {"stock_code": "600160.SH", "stock_name": "巨化股份", "weight": null, "change": "增持"},
+        {"stock_code": "688120.SH", "stock_name": "华海清科", "weight": null, "change": "增持"},
+        {"stock_code": "300308.SZ", "stock_name": "中际旭创", "weight": null, "change": "减持"},
+        {"stock_code": "300750.SZ", "stock_name": "宁德时代", "weight": null, "change": "减持"},
+        {"stock_code": "688099.SH", "stock_name": "晶晨股份", "weight": null, "change": "增持"},
+        {"stock_code": "605117.SH", "stock_name": "德业股份", "weight": null, "change": "增持"},
+        {"stock_code": "600426.SH", "stock_name": "华鲁恒升", "weight": null, "change": "增持"},
+        {"stock_code": "000683.SZ", "stock_name": "博源化工", "weight": null, "change": "增持"},
+        {"stock_code": "002008.SZ", "stock_name": "大族激光", "weight": null, "change": "增持"},
+        {"stock_code": "688008.SH", "stock_name": "澜起科技", "weight": null, "change": "减持"}
+      ],
+      "notes": "2026年一季报未披露具体持仓比例"
+    },
+    "2025Q4": {
+      "report_date": "2025-12-31",
+      "top_10": [
+        {"stock_code": "600160.SH", "stock_name": "巨化股份", "weight": 9.68, "change": "增持，升至第一大重仓"},
+        {"stock_code": "688099.SH", "stock_name": "晶晨股份", "weight": 7.09, "change": "减持"},
+        {"stock_code": "300308.SZ", "stock_name": "中际旭创", "weight": 6.24, "change": "减持"},
+        {"stock_code": "300750.SZ", "stock_name": "宁德时代", "weight": 5.20, "change": "增持"},
+        {"stock_code": "688120.SH", "stock_name": "华海清科", "weight": 4.11, "change": "减持"},
+        {"stock_code": "605117.SH", "stock_name": "德业股份", "weight": 4.03, "change": "新进前十大"},
+        {"stock_code": "688008.SH", "stock_name": "澜起科技", "weight": 3.81, "change": "减持"},
+        {"stock_code": "600426.SH", "stock_name": "华鲁恒升", "weight": 3.69, "change": "新进前十大"},
+        {"stock_code": "000683.SZ", "stock_name": "博源化工", "weight": 3.31, "change": "新进前十大"},
+        {"stock_code": "002008.SZ", "stock_name": "大族激光", "weight": 2.68, "change": "新进前十大"}
+      ],
+      "exited_top10": ["北方华创", "东山精密", "立讯精密", "置信电气"]
+    },
+    "2025Q3": {
+      "report_date": "2025-09-30",
+      "top_10": [
+        {"stock_code": "300308.SZ", "stock_name": "中际旭创", "weight": 9.76, "change": "减持"},
+        {"stock_code": "600160.SH", "stock_name": "巨化股份", "weight": 8.34, "change": "减持"},
+        {"stock_code": "688099.SH", "stock_name": "晶晨股份", "weight": 7.12, "change": "减持"},
+        {"stock_code": "688120.SH", "stock_name": "华海清科", "weight": 6.25, "change": "增持"},
+        {"stock_code": "688008.SH", "stock_name": "澜起科技", "weight": 5.47, "change": "增持"},
+        {"stock_code": "002371.SZ", "stock_name": "北方华创", "weight": 4.98, "change": "增持"},
+        {"stock_code": "002384.SZ", "stock_name": "东山精密", "weight": 4.63, "change": "增持"},
+        {"stock_code": "300750.SZ", "stock_name": "宁德时代", "weight": 4.21, "change": "增持"},
+        {"stock_code": "002475.SZ", "stock_name": "立讯精密", "weight": 3.89, "change": "增持"},
+        {"stock_code": "600517.SH", "stock_name": "置信电气", "weight": 3.56, "change": "新进"}
+      ],
+      "exited_top10": ["完美世界"]
+    },
+    "2025Q2": {
+      "report_date": "2025-06-30",
+      "top_10": [
+        {"stock_code": "300308.SZ", "stock_name": "中际旭创", "weight": 10.12, "change": "增持"},
+        {"stock_code": "600160.SH", "stock_name": "巨化股份", "weight": 8.76, "change": "增持"},
+        {"stock_code": "688099.SH", "stock_name": "晶晨股份", "weight": 7.34, "change": "减持"},
+        {"stock_code": "688120.SH", "stock_name": "华海清科", "weight": 5.89, "change": "新进"},
+        {"stock_code": "688008.SH", "stock_name": "澜起科技", "weight": 5.12, "change": "减持"},
+        {"stock_code": "300750.SZ", "stock_name": "宁德时代", "weight": 4.76, "change": "减持"},
+        {"stock_code": "002371.SZ", "stock_name": "北方华创", "weight": 4.35, "change": "新进"},
+        {"stock_code": "002384.SZ", "stock_name": "东山精密", "weight": 4.01, "change": "新进"},
+        {"stock_code": "002475.SZ", "stock_name": "立讯精密", "weight": 3.78, "change": "新进"},
+        {"stock_code": "002624.SZ", "stock_name": "完美世界", "weight": 3.54, "change": "减持"}
+      ],
+      "exited_top10": ["比亚迪", "海大集团", "恒玄科技", "鹏鼎控股"]
+    },
+    "2025Q1": {
+      "report_date": "2025-03-31",
+      "top_10": [
+        {"stock_code": "300308.SZ", "stock_name": "中际旭创", "weight": 9.87, "change": "新进"},
+        {"stock_code": "688099.SH", "stock_name": "晶晨股份", "weight": 7.65, "change": "减持"},
+        {"stock_code": "600160.SH", "stock_name": "巨化股份", "weight": 6.92, "change": "新进"},
+        {"stock_code": "688008.SH", "stock_name": "澜起科技", "weight": 5.34, "change": "增持"},
+        {"stock_code": "300750.SZ", "stock_name": "宁德时代", "weight": 4.87, "change": "新进"},
+        {"stock_code": "002594.SZ", "stock_name": "比亚迪", "weight": 4.21, "change": "新进"},
+        {"stock_code": "002624.SZ", "stock_name": "完美世界", "weight": 3.96, "change": "增持"},
+        {"stock_code": "002311.SZ", "stock_name": "海大集团", "weight": 3.72, "change": "减持"},
+        {"stock_code": "688608.SH", "stock_name": "恒玄科技", "weight": 3.58, "change": "减持"},
+        {"stock_code": "002938.SZ", "stock_name": "鹏鼎控股", "weight": 3.45, "change": "减持"}
+      ],
+      "exited_top10": ["蓝思科技", "立讯精密", "梅花生物", "北方华创"]
+    },
+    "2024Q4": {
+      "report_date": "2024-12-31",
+      "top_10": [
+        {"stock_code": "688099.SH", "stock_name": "晶晨股份", "weight": 7.82, "change": "增持"},
+        {"stock_code": "688608.SH", "stock_name": "恒玄科技", "weight": 6.57, "change": "新进"},
+        {"stock_code": "300433.SZ", "stock_name": "蓝思科技", "weight": 5.94, "change": "新进"},
+        {"stock_code": "002938.SZ", "stock_name": "鹏鼎控股", "weight": 5.13, "change": "新进"},
+        {"stock_code": "002311.SZ", "stock_name": "海大集团", "weight": 4.76, "change": "新进"},
+        {"stock_code": "688008.SH", "stock_name": "澜起科技", "weight": 4.35, "change": "减持"},
+        {"stock_code": "002475.SZ", "stock_name": "立讯精密", "weight": 4.09, "change": "减持"},
+        {"stock_code": "002624.SZ", "stock_name": "完美世界", "weight": 3.87, "change": "新进"},
+        {"stock_code": "600873.SH", "stock_name": "梅花生物", "weight": 3.62, "change": "减持"},
+        {"stock_code": "002371.SZ", "stock_name": "北方华创", "weight": 3.48, "change": "减持"}
+      ],
+      "exited_top10": ["水晶光电", "三安光电", "公牛集团", "中国平安", "通富微电"]
+    },
+    "2024Q3": {
+      "report_date": "2024-09-30",
+      "top_10": [
+        {"stock_code": "688099.SH", "stock_name": "晶晨股份", "weight": 7.34, "change": "增持"},
+        {"stock_code": "688008.SH", "stock_name": "澜起科技", "weight": 6.21, "change": "增持"},
+        {"stock_code": "002475.SZ", "stock_name": "立讯精密", "weight": 5.87, "change": "增持"},
+        {"stock_code": "002273.SZ", "stock_name": "水晶光电", "weight": 5.09, "change": "减持"},
+        {"stock_code": "601318.SH", "stock_name": "中国平安", "weight": 4.76, "change": "增持"},
+        {"stock_code": "600703.SH", "stock_name": "三安光电", "weight": 4.43, "change": "减持"},
+        {"stock_code": "603195.SH", "stock_name": "公牛集团", "weight": 4.15, "change": "减持"},
+        {"stock_code": "600873.SH", "stock_name": "梅花生物", "weight": 3.89, "change": "新进"},
+        {"stock_code": "002371.SZ", "stock_name": "北方华创", "weight": 3.62, "change": "新进"},
+        {"stock_code": "002156.SZ", "stock_name": "通富微电", "weight": 3.48, "change": "增持"}
+      ],
+      "exited_top10": ["海尔智家", "仁东控股"]
+    },
+    "2024Q2": {
+      "report_date": "2024-06-30",
+      "top_10": [
+        {"stock_code": "688099.SH", "stock_name": "晶晨股份", "weight": 6.98, "change": "减持"},
+        {"stock_code": "600690.SH", "stock_name": "海尔智家", "weight": 6.54, "change": "减持"},
+        {"stock_code": "688008.SH", "stock_name": "澜起科技", "weight": 5.76, "change": "减持"},
+        {"stock_code": "002273.SZ", "stock_name": "水晶光电", "weight": 5.12, "change": "增持"},
+        {"stock_code": "600703.SH", "stock_name": "三安光电", "weight": 4.87, "change": "减持"},
+        {"stock_code": "002475.SZ", "stock_name": "立讯精密", "weight": 4.53, "change": "增持"},
+        {"stock_code": "603195.SH", "stock_name": "公牛集团", "weight": 4.18, "change": "增持"},
+        {"stock_code": "601318.SH", "stock_name": "中国平安", "weight": 3.94, "change": "增持"},
+        {"stock_code": "002647.SZ", "stock_name": "仁东控股", "weight": 3.61, "change": "新进"},
+        {"stock_code": "002156.SZ", "stock_name": "通富微电", "weight": 3.47, "change": "减持"}
+      ],
+      "exited_top10": ["工业富联"]
+    },
+    "2024Q1": {
+      "report_date": "2024-03-31",
+      "top_10": [
+        {"stock_code": "688099.SH", "stock_name": "晶晨股份", "weight": 7.15, "change": "增持"},
+        {"stock_code": "600690.SH", "stock_name": "海尔智家", "weight": 6.83, "change": "减持"},
+        {"stock_code": "688008.SH", "stock_name": "澜起科技", "weight": 5.92, "change": "增持"},
+        {"stock_code": "600703.SH", "stock_name": "三安光电", "weight": 5.14, "change": "减持"},
+        {"stock_code": "002273.SZ", "stock_name": "水晶光电", "weight": 4.68, "change": "新进"},
+        {"stock_code": "002475.SZ", "stock_name": "立讯精密", "weight": 4.37, "change": "减持"},
+        {"stock_code": "603195.SH", "stock_name": "公牛集团", "weight": 4.05, "change": "减持"},
+        {"stock_code": "002156.SZ", "stock_name": "通富微电", "weight": 3.86, "change": "减持"},
+        {"stock_code": "601318.SH", "stock_name": "中国平安", "weight": 3.62, "change": "新进"},
+        {"stock_code": "601138.SH", "stock_name": "工业富联", "weight": 3.49, "change": "减持"}
+      ],
+      "exited_top10": ["新产业", "宁德时代"]
+    },
+    "2023Q4": {
+      "report_date": "2023-12-31",
+      "top_10": [
+        {"stock_code": "600690.SH", "stock_name": "海尔智家", "weight": 7.68, "change": "增持"},
+        {"stock_code": "688099.SH", "stock_name": "晶晨股份", "weight": 6.24, "change": "增持"},
+        {"stock_code": "600703.SH", "stock_name": "三安光电", "weight": 5.81, "change": "减持"},
+        {"stock_code": "688008.SH", "stock_name": "澜起科技", "weight": 5.07, "change": "增持"},
+        {"stock_code": "002475.SZ", "stock_name": "立讯精密", "weight": 4.76, "change": "增持"},
+        {"stock_code": "603195.SH", "stock_name": "公牛集团", "weight": 4.29, "change": "减持"},
+        {"stock_code": "002156.SZ", "stock_name": "通富微电", "weight": 4.03, "change": "新进"},
+        {"stock_code": "300832.SZ", "stock_name": "新产业", "weight": 3.78, "change": "新进"},
+        {"stock_code": "300750.SZ", "stock_name": "宁德时代", "weight": 3.65, "change": "减持"},
+        {"stock_code": "601138.SH", "stock_name": "工业富联", "weight": 3.52, "change": "新进"}
+      ],
+      "exited_top10": ["中兴通讯", "韵达股份", "三七互娱"]
+    },
+    "2023Q3": {
+      "report_date": "2023-09-30",
+      "top_10": [
+        {"stock_code": "600690.SH", "stock_name": "海尔智家", "weight": 7.12, "change": "减持"},
+        {"stock_code": "600703.SH", "stock_name": "三安光电", "weight": 6.57, "change": "减持"},
+        {"stock_code": "688099.SH", "stock_name": "晶晨股份", "weight": 5.93, "change": "增持"},
+        {"stock_code": "688008.SH", "stock_name": "澜起科技", "weight": 4.85, "change": "增持"},
+        {"stock_code": "002475.SZ", "stock_name": "立讯精密", "weight": 4.62, "change": "减持"},
+        {"stock_code": "603195.SH", "stock_name": "公牛集团", "weight": 4.38, "change": "新进"},
+        {"stock_code": "000063.SZ", "stock_name": "中兴通讯", "weight": 4.15, "change": "减持"},
+        {"stock_code": "300750.SZ", "stock_name": "宁德时代", "weight": 3.94, "change": "增持"},
+        {"stock_code": "002120.SZ", "stock_name": "韵达股份", "weight": 3.67, "change": "减持"},
+        {"stock_code": "002555.SZ", "stock_name": "三七互娱", "weight": 3.51, "change": "减持"}
+      ],
+      "exited_top10": ["伊利股份"]
+    },
+    "2023Q2": {
+      "report_date": "2023-06-30",
+      "top_10": [
+        {"stock_code": "600690.SH", "stock_name": "海尔智家", "weight": 7.54, "change": "减持"},
+        {"stock_code": "600703.SH", "stock_name": "三安光电", "weight": 6.83, "change": "增持"},
+        {"stock_code": "002475.SZ", "stock_name": "立讯精密", "weight": 6.21, "change": "减持"},
+        {"stock_code": "688099.SH", "stock_name": "晶晨股份", "weight": 5.07, "change": "增持"},
+        {"stock_code": "002120.SZ", "stock_name": "韵达股份", "weight": 4.58, "change": "减持"},
+        {"stock_code": "000063.SZ", "stock_name": "中兴通讯", "weight": 4.29, "change": "增持"},
+        {"stock_code": "688008.SH", "stock_name": "澜起科技", "weight": 4.01, "change": "新进"},
+        {"stock_code": "300750.SZ", "stock_name": "宁德时代", "weight": 3.86, "change": "新进"},
+        {"stock_code": "002555.SZ", "stock_name": "三七互娱", "weight": 3.62, "change": "新进"},
+        {"stock_code": "600887.SH", "stock_name": "伊利股份", "weight": 3.47, "change": "减持"}
+      ],
+      "exited_top10": ["保利发展", "正泰电器", "比亚迪"]
+    },
+    "2023Q1": {
+      "report_date": "2023-03-31",
+      "top_10": [
+        {"stock_code": "600690.SH", "stock_name": "海尔智家", "weight": 7.89, "change": "增持"},
+        {"stock_code": "002475.SZ", "stock_name": "立讯精密", "weight": 6.97, "change": "增持"},
+        {"stock_code": "600703.SH", "stock_name": "三安光电", "weight": 6.14, "change": "增持"},
+        {"stock_code": "600048.SH", "stock_name": "保利发展", "weight": 5.03, "change": "减持"},
+        {"stock_code": "002120.SZ", "stock_name": "韵达股份", "weight": 4.72, "change": "增持"},
+        {"stock_code": "688099.SH", "stock_name": "晶晨股份", "weight": 4.36, "change": "增持"},
+        {"stock_code": "000063.SZ", "stock_name": "中兴通讯", "weight": 4.11, "change": "新进"},
+        {"stock_code": "601877.SH", "stock_name": "正泰电器", "weight": 3.85, "change": "减持"},
+        {"stock_code": "002594.SZ", "stock_name": "比亚迪", "weight": 3.69, "change": "减持"},
+        {"stock_code": "600887.SH", "stock_name": "伊利股份", "weight": 3.54, "change": "增持"}
+      ],
+      "exited_top10": ["万科A"]
+    },
+    "2022Q4": {
+      "report_date": "2022-12-31",
+      "top_10": [
+        {"stock_code": "600690.SH", "stock_name": "海尔智家", "weight": 7.21, "change": "增持"},
+        {"stock_code": "002475.SZ", "stock_name": "立讯精密", "weight": 6.54, "change": "增持"},
+        {"stock_code": "600048.SH", "stock_name": "保利发展", "weight": 5.87, "change": "减持"},
+        {"stock_code": "600703.SH", "stock_name": "三安光电", "weight": 5.12, "change": "新进"},
+        {"stock_code": "002120.SZ", "stock_name": "韵达股份", "weight": 4.68, "change": "新进"},
+        {"stock_code": "000002.SZ", "stock_name": "万科A", "weight": 4.35, "change": "减持"},
+        {"stock_code": "601877.SH", "stock_name": "正泰电器", "weight": 4.09, "change": "减持"},
+        {"stock_code": "002594.SZ", "stock_name": "比亚迪", "weight": 3.96, "change": "减持"},
+        {"stock_code": "688099.SH", "stock_name": "晶晨股份", "weight": 3.77, "change": "新进"},
+        {"stock_code": "600887.SH", "stock_name": "伊利股份", "weight": 3.52, "change": "新进"}
+      ],
+      "exited_top10": ["招商蛇口", "北新建材", "特变电工", "中微公司"]
+    },
+    "2022Q3": {
+      "report_date": "2022-09-30",
+      "top_10": [
+        {"stock_code": "600048.SH", "stock_name": "保利发展", "weight": 9.97, "change": "新进"},
+        {"stock_code": "600690.SH", "stock_name": "海尔智家", "weight": 6.35, "change": "减持"},
+        {"stock_code": "002475.SZ", "stock_name": "立讯精密", "weight": 5.92, "change": "减持"},
+        {"stock_code": "000002.SZ", "stock_name": "万科A", "weight": 5.18, "change": "新进"},
+        {"stock_code": "001979.SZ", "stock_name": "招商蛇口", "weight": 4.76, "change": "新进"},
+        {"stock_code": "601877.SH", "stock_name": "正泰电器", "weight": 4.33, "change": "减持"},
+        {"stock_code": "002594.SZ", "stock_name": "比亚迪", "weight": 4.09, "change": "增持"},
+        {"stock_code": "000786.SZ", "stock_name": "北新建材", "weight": 3.94, "change": "新进"},
+        {"stock_code": "600089.SH", "stock_name": "特变电工", "weight": 3.71, "change": "减持"},
+        {"stock_code": "688012.SH", "stock_name": "中微公司", "weight": 3.58, "change": "新进"}
+      ],
+      "exited_top10": ["伊利股份", "三一重工", "顾家家居", "阳光电源", "通威股份"]
+    },
+    "2022Q2": {
+      "report_date": "2022-06-30",
+      "top_10": [
+        {"stock_code": "600690.SH", "stock_name": "海尔智家", "weight": 7.42, "change": "减持"},
+        {"stock_code": "002475.SZ", "stock_name": "立讯精密", "weight": 6.81, "change": "增持"},
+        {"stock_code": "600089.SH", "stock_name": "特变电工", "weight": 5.14, "change": "增持"},
+        {"stock_code": "601877.SH", "stock_name": "正泰电器", "weight": 4.97, "change": "增持"},
+        {"stock_code": "600887.SH", "stock_name": "伊利股份", "weight": 4.36, "change": "减持"},
+        {"stock_code": "600031.SH", "stock_name": "三一重工", "weight": 4.12, "change": "减持"},
+        {"stock_code": "603816.SH", "stock_name": "顾家家居", "weight": 3.95, "change": "新进"},
+        {"stock_code": "002594.SZ", "stock_name": "比亚迪", "weight": 3.88, "change": "减持"},
+        {"stock_code": "300274.SZ", "stock_name": "阳光电源", "weight": 3.76, "change": "新进"},
+        {"stock_code": "600438.SH", "stock_name": "通威股份", "weight": 3.61, "change": "新进"}
+      ],
+      "exited_top10": ["顺丰控股", "三七互娱", "普洛药业"]
+    },
+    "2022Q1": {
+      "report_date": "2022-03-31",
+      "top_10": [
+        {"stock_code": "600690.SH", "stock_name": "海尔智家", "weight": 7.65, "change": "增持"},
+        {"stock_code": "002475.SZ", "stock_name": "立讯精密", "weight": 6.72, "change": "增持"},
+        {"stock_code": "600031.SH", "stock_name": "三一重工", "weight": 5.21, "change": "减持"},
+        {"stock_code": "600887.SH", "stock_name": "伊利股份", "weight": 4.89, "change": "减持"},
+        {"stock_code": "601877.SH", "stock_name": "正泰电器", "weight": 4.53, "change": "增持"},
+        {"stock_code": "002594.SZ", "stock_name": "比亚迪", "weight": 4.17, "change": "增持"},
+        {"stock_code": "002352.SZ", "stock_name": "顺丰控股", "weight": 3.96, "change": "减持"},
+        {"stock_code": "600089.SH", "stock_name": "特变电工", "weight": 3.74, "change": "新进"},
+        {"stock_code": "002555.SZ", "stock_name": "三七互娱", "weight": 3.58, "change": "新进"},
+        {"stock_code": "000739.SZ", "stock_name": "普洛药业", "weight": 3.42, "change": "新进"}
+      ],
+      "exited_top10": ["芒果超媒", "万华化学", "隆基绿能"]
+    },
+    "2021Q4": {
+      "report_date": "2021-12-31",
+      "top_10": [
+        {"stock_code": "600690.SH", "stock_name": "海尔智家", "weight": 6.38, "change": "减持超20%"},
+        {"stock_code": "002415.SZ", "stock_name": "海康威视", "weight": null, "change": "减持"},
+        {"stock_code": "300413.SZ", "stock_name": "芒果超媒", "weight": null, "change": "减持"},
+        {"stock_code": "603707.SH", "stock_name": "健友股份", "weight": null, "change": "减持"},
+        {"stock_code": "600754.SH", "stock_name": "锦江酒店", "weight": null, "change": "减持"},
+        {"stock_code": "600309.SH", "stock_name": "万华化学", "weight": null, "change": "减持"}
+      ]
+    },
+    "2021Q3": {
+      "report_date": "2021-09-30",
+      "top_10": null,
+      "notes": "管理规模287.56亿元，环比下降"
+    },
+    "2021Q2": {
+      "report_date": "2021-06-30",
+      "top_10": [
+        {"stock_code": "600690.SH", "stock_name": "海尔智家", "weight": null, "change": "增持"},
+        {"stock_code": "00700.HK", "stock_name": "腾讯控股", "weight": null, "change": "新进"},
+        {"stock_code": "002415.SZ", "stock_name": "海康威视", "weight": null, "change": null},
+        {"stock_code": "600754.SH", "stock_name": "锦江酒店", "weight": null, "change": null},
+        {"stock_code": "000001.SZ", "stock_name": "平安银行", "weight": null, "change": null},
+        {"stock_code": "600309.SH", "stock_name": "万华化学", "weight": null, "change": "新进"},
+        {"stock_code": "688099.SH", "stock_name": "晶晨股份", "weight": null, "change": "新进"},
+        {"stock_code": "00291.HK", "stock_name": "华润啤酒", "weight": null, "change": null},
+        {"stock_code": "300413.SZ", "stock_name": "芒果超媒", "weight": null, "change": "新进"},
+        {"stock_code": "601166.SH", "stock_name": "兴业银行", "weight": null, "change": null}
+      ]
+    },
+    "2021Q1": {
+      "report_date": "2021-03-31",
+      "top_10": [
+        {"stock_code": "600690.SH", "stock_name": "海尔智家", "weight": 7.24, "change": "增持38.58%"},
+        {"stock_code": "601166.SH", "stock_name": "兴业银行", "weight": null, "change": "新进"},
+        {"stock_code": "000001.SZ", "stock_name": "平安银行", "weight": null, "change": "新进"},
+        {"stock_code": "002415.SZ", "stock_name": "海康威视", "weight": null, "change": "新进"},
+        {"stock_code": "600754.SH", "stock_name": "锦江酒店", "weight": null, "change": "新进"}
+      ],
+      "exited_top10": ["美的集团", "万华化学", "比亚迪", "隆基股份"]
+    },
+    "2020Q4": {
+      "report_date": "2020-12-31",
+      "top_10": [
+        {"stock_code": "600690.SH", "stock_name": "海尔智家", "weight": null, "change": null},
+        {"stock_code": "002475.SZ", "stock_name": "立讯精密", "weight": null, "change": null},
+        {"stock_code": "601012.SH", "stock_name": "隆基股份", "weight": null, "change": "持有942.85万股"},
+        {"stock_code": "002415.SZ", "stock_name": "海康威视", "weight": null, "change": "新进"},
+        {"stock_code": "00291.HK", "stock_name": "华润啤酒", "weight": null, "change": "新进"},
+        {"stock_code": "000333.SZ", "stock_name": "美的集团", "weight": null, "change": null},
+        {"stock_code": "002594.SZ", "stock_name": "比亚迪", "weight": null, "change": null},
+        {"stock_code": "600309.SH", "stock_name": "万华化学", "weight": null, "change": null},
+        {"stock_code": "300750.SZ", "stock_name": "宁德时代", "weight": null, "change": null},
+        {"stock_code": "002352.SZ", "stock_name": "顺丰控股", "weight": null, "change": null}
+      ],
+      "notes": "持仓极为分散，33只股票公允价占净值比超1%"
+    }
+  }
+}

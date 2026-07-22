@@ -1,0 +1,137 @@
+{
+  "manager": "赵诣",
+  "fund_code": "001606",
+  "fund_name": "农银汇理工业4.0混合",
+  "manager_relation": "former",
+  "manager_period": "2019-11-08至2022-03-23",
+  "collected_at": "2026-07-11",
+  "units": {
+    "unit_nav": "元",
+    "period_return_pct": "%",
+    "benchmark_return_pct": "%",
+    "fund_net_assets_yuan": "元",
+    "equity_assets_pct": "%"
+  },
+  "quarters": [
+    {
+      "report_period": "2019Q4",
+      "published_at": "2020-01-21",
+      "manager_period_note": "赵诣于本季度内开始管理，本季度为部分任期。",
+      "unit_nav": 1.3112,
+      "period_return_pct": 7.72,
+      "benchmark_return_pct": 5.26,
+      "fund_net_assets_yuan": 153992239.5,
+      "equity_assets_pct": 75.79,
+      "source_url": "https://fund.eastmoney.com/gonggao/001606,AN202001211374409949.html",
+      "source_pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202001211374409949_1.pdf"
+    },
+    {
+      "report_period": "2020Q1",
+      "published_at": "2020-04-22",
+      "manager_period_note": "本报告期处于赵诣的完整任期内。",
+      "unit_nav": 1.3269,
+      "period_return_pct": 1.2,
+      "benchmark_return_pct": -5.43,
+      "fund_net_assets_yuan": 142063732.51,
+      "equity_assets_pct": 91.59,
+      "source_url": "https://fund.eastmoney.com/gonggao/001606,AN202004221378389739.html",
+      "source_pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202004221378389739_1.pdf"
+    },
+    {
+      "report_period": "2020Q2",
+      "published_at": "2020-07-20",
+      "manager_period_note": "本报告期处于赵诣的完整任期内。",
+      "unit_nav": 1.885,
+      "period_return_pct": 42.06,
+      "benchmark_return_pct": 8.16,
+      "fund_net_assets_yuan": 157035239.82,
+      "equity_assets_pct": 89.09,
+      "source_url": "https://fund.eastmoney.com/gonggao/001606,AN202007201392876150.html",
+      "source_pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202007201392876150_1.pdf"
+    },
+    {
+      "report_period": "2020Q3",
+      "published_at": "2020-10-27",
+      "manager_period_note": "本报告期处于赵诣的完整任期内。",
+      "unit_nav": 2.5443,
+      "period_return_pct": 34.98,
+      "benchmark_return_pct": 6.42,
+      "fund_net_assets_yuan": 649183311.39,
+      "equity_assets_pct": 86.47,
+      "source_url": "https://fund.eastmoney.com/gonggao/001606,AN202010271423965850.html",
+      "source_pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202010271423965850_1.pdf"
+    },
+    {
+      "report_period": "2020Q4",
+      "published_at": "2021-01-21",
+      "manager_period_note": "本报告期处于赵诣的完整任期内。",
+      "unit_nav": 3.4952,
+      "period_return_pct": 37.37,
+      "benchmark_return_pct": 9.21,
+      "fund_net_assets_yuan": 3934662644.62,
+      "equity_assets_pct": 69.25,
+      "source_url": "https://fund.eastmoney.com/gonggao/001606,AN202101211452788080.html",
+      "source_pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202101211452788080_1.pdf"
+    },
+    {
+      "report_period": "2021Q1",
+      "published_at": "2021-04-21",
+      "manager_period_note": "本报告期处于赵诣的完整任期内。",
+      "unit_nav": 3.1384,
+      "period_return_pct": -10.21,
+      "benchmark_return_pct": -1.54,
+      "fund_net_assets_yuan": 5088512300.35,
+      "equity_assets_pct": 92.29,
+      "source_url": "https://fund.eastmoney.com/gonggao/001606,AN202104211486829956.html",
+      "source_pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202104211486829956_1.pdf"
+    },
+    {
+      "report_period": "2021Q2",
+      "published_at": "2021-07-20",
+      "manager_period_note": "本报告期处于赵诣的完整任期内。",
+      "unit_nav": 4.0065,
+      "period_return_pct": 27.66,
+      "benchmark_return_pct": 2.78,
+      "fund_net_assets_yuan": 5575308293.38,
+      "equity_assets_pct": 91.83,
+      "source_url": "https://fund.eastmoney.com/gonggao/001606,AN202107201504957845.html",
+      "source_pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202107201504957845_1.pdf"
+    },
+    {
+      "report_period": "2021Q3",
+      "published_at": "2021-10-26",
+      "manager_period_note": "本报告期处于赵诣的完整任期内。",
+      "unit_nav": 4.8629,
+      "period_return_pct": 21.38,
+      "benchmark_return_pct": -3.78,
+      "fund_net_assets_yuan": 6003148638.58,
+      "equity_assets_pct": 87.49,
+      "source_url": "https://fund.eastmoney.com/gonggao/001606,AN202110261525054436.html",
+      "source_pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202110261525054436_1.pdf"
+    },
+    {
+      "report_period": "2021Q4",
+      "published_at": "2022-01-21",
+      "manager_period_note": "本报告期处于赵诣的完整任期内。",
+      "unit_nav": 5.0317,
+      "period_return_pct": 3.47,
+      "benchmark_return_pct": 1.51,
+      "fund_net_assets_yuan": 7040174141.16,
+      "equity_assets_pct": 83.49,
+      "source_url": "https://fund.eastmoney.com/gonggao/001606,AN202201211541688786.html",
+      "source_pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202201211541688786_1.pdf"
+    },
+    {
+      "report_period": "2022Q1",
+      "published_at": "2022-04-21",
+      "manager_period_note": "赵诣于 2022-03-23 离任，本季度为部分任期。",
+      "unit_nav": 4.176,
+      "period_return_pct": -17.01,
+      "benchmark_return_pct": -9.32,
+      "fund_net_assets_yuan": 5078667375.6,
+      "equity_assets_pct": 79.42,
+      "source_url": "https://fund.eastmoney.com/gonggao/001606,AN202204211560638287.html",
+      "source_pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202204211560638287_1.pdf"
+    }
+  ]
+}

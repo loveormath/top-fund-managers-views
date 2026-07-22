@@ -1,0 +1,36 @@
+{
+  "funds": [
+    {
+      "code": "163406",
+      "name": "兴全合润混合型证券投资基金",
+      "inception_date": "2013-01-29",
+      "end_date": null,
+      "status": "在任",
+      "type": "混合型"
+    },
+    {
+      "code": "163417",
+      "name": "兴全合宜灵活配置混合型证券投资基金",
+      "inception_date": "2018-01-23",
+      "end_date": null,
+      "status": "在任",
+      "type": "混合型"
+    },
+    {
+      "code": "008378",
+      "name": "兴全社会价值三年持有期混合型证券投资基金",
+      "inception_date": "2020-01-23",
+      "end_date": null,
+      "status": "在任",
+      "type": "混合型"
+    },
+    {
+      "code": "163402",
+      "name": "兴全趋势投资混合型证券投资基金",
+      "inception_date": "2021-10-20",
+      "end_date": null,
+      "status": "在任",
+      "type": "混合型"
+    }
+  ]
+}
