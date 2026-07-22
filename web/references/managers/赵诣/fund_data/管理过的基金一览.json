@@ -1,0 +1,98 @@
+{
+  "manager": "赵诣",
+  "manager_id": "30525101",
+  "collected_at": "2026-07-11",
+  "source_url": "https://fund.eastmoney.com/manager/30525101.html",
+  "fund_count_by_code": 8,
+  "portfolio_note": "016709/016710 为同一投资组合的 A/C 份额，结构化季度持仓只保留 016709 一份。",
+  "funds": [
+    {
+      "fund_code": "027736",
+      "fund_name": "泉果创新成长混合发起式",
+      "fund_type": "混合型-偏股",
+      "scale_100m_cny": 5.37,
+      "manager_period": "2026-06-17 — 至今",
+      "tenure": "24天",
+      "tenure_return_pct": -3.45,
+      "status": "current",
+      "source_url": "https://fund.eastmoney.com/manager/30525101.html"
+    },
+    {
+      "fund_code": "016710",
+      "fund_name": "泉果旭源三年持有期混合C",
+      "fund_type": "混合型-偏股",
+      "scale_100m_cny": 10.34,
+      "manager_period": "2022-10-18 — 至今",
+      "tenure": "3年又267天",
+      "tenure_return_pct": 22.72,
+      "status": "current",
+      "source_url": "https://fund.eastmoney.com/manager/30525101.html"
+    },
+    {
+      "fund_code": "016709",
+      "fund_name": "泉果旭源三年持有期混合A",
+      "fund_type": "混合型-偏股",
+      "scale_100m_cny": 58.86,
+      "manager_period": "2022-10-18 — 至今",
+      "tenure": "3年又267天",
+      "tenure_return_pct": 24.56,
+      "status": "current",
+      "source_url": "https://fund.eastmoney.com/manager/30525101.html"
+    },
+    {
+      "fund_code": "006977",
+      "fund_name": "农银汇理海棠三年定开混合",
+      "fund_type": "混合型-偏股",
+      "scale_100m_cny": 0.67,
+      "manager_period": "2020-06-01 — 2022-03-23",
+      "tenure": "1年又295天",
+      "tenure_return_pct": 142.81,
+      "status": "former",
+      "source_url": "https://fund.eastmoney.com/manager/30525101.html"
+    },
+    {
+      "fund_code": "001606",
+      "fund_name": "农银工业4.0混合",
+      "fund_type": "混合型-灵活",
+      "scale_100m_cny": 21.78,
+      "manager_period": "2019-11-08 — 2022-03-23",
+      "tenure": "2年又136天",
+      "tenure_return_pct": 253.33,
+      "status": "former",
+      "source_url": "https://fund.eastmoney.com/manager/30525101.html"
+    },
+    {
+      "fund_code": "002190",
+      "fund_name": "农银新能源主题A",
+      "fund_type": "混合型-灵活",
+      "scale_100m_cny": 71.15,
+      "manager_period": "2019-08-20 — 2022-03-23",
+      "tenure": "2年又216天",
+      "tenure_return_pct": 328.17,
+      "status": "former",
+      "source_url": "https://fund.eastmoney.com/manager/30525101.html"
+    },
+    {
+      "fund_code": "006534",
+      "fund_name": "农银汇理永盛定期开放混合",
+      "fund_type": "混合型-灵活",
+      "scale_100m_cny": 0.31,
+      "manager_period": "2019-03-12 — 2020-06-01",
+      "tenure": "1年又82天",
+      "tenure_return_pct": 5.5,
+      "status": "former",
+      "source_url": "https://fund.eastmoney.com/manager/30525101.html"
+    },
+    {
+      "fund_code": "000336",
+      "fund_name": "农银研究精选混合",
+      "fund_type": "混合型-灵活",
+      "scale_100m_cny": 16.26,
+      "manager_period": "2017-03-21 — 2022-03-23",
+      "tenure": "5年又3天",
+      "tenure_return_pct": 219.54,
+      "status": "former",
+      "source_url": "https://fund.eastmoney.com/manager/30525101.html"
+    }
+  ]
+}

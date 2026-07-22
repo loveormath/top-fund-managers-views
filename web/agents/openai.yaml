@@ -1,0 +1,5 @@
+interface:
+  display_name: "Fund Insight"
+  short_description: "五位基金经理的可溯源观点分析与圆桌讨论"
+  brand_color: "#2563EB"
+  default_prompt: "Use $top-fund-managers-views to answer with sourced manager evidence or run a structured multi-manager discussion."

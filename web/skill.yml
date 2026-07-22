@@ -1,0 +1,33 @@
+name: top-fund-managers-views
+version: 2.0.0
+description: 五基金经理可溯源观点、方法推演、多人综合与两轮会议讨论 Skill
+author: personal project
+license: MIT
+registry: config/managers.yaml
+managers:
+  - id: liu-xu
+    name: 刘旭
+  - id: zhang-kun
+    name: 张坤
+  - id: zhang-lu
+    name: 张璐
+  - id: xie-zhi-yu
+    name: 谢治宇
+  - id: zhao-yi
+    name: 赵诣
+workflows:
+  - single
+  - summary
+  - meeting
+scripts:
+  - scripts/search_corpus.py
+  - scripts/build_index.py
+  - scripts/fund_lookup.py
+  - scripts/fetch_any_fund.py
+  - scripts/score_fund.py
+  - scripts/fetch_fund_data.py
+dependencies:
+  - requests
+  - beautifulsoup4
+  - lxml
+  - PyYAML

@@ -1,0 +1,1 @@
+"""Fund Insight backend package."""

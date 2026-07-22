@@ -1,0 +1,28 @@
+{
+  "fund_code": "163406",
+  "fund_name": "兴全合润混合型证券投资基金",
+  "data": [
+    {"quarter": "2020Q4", "stock_position": null, "fund_size": 241.73, "period_return": null, "benchmark_return": null, "notes": "近7年+550.51%，同类2/450"},
+    {"quarter": "2021Q1", "stock_position": 87.42, "fund_size": 269.50, "period_return": null, "benchmark_return": null, "notes": null},
+    {"quarter": "2021Q2", "stock_position": null, "fund_size": null, "period_return": null, "benchmark_return": null, "notes": null},
+    {"quarter": "2021Q3", "stock_position": 92.01, "fund_size": 287.56, "period_return": null, "benchmark_return": null, "notes": null},
+    {"quarter": "2021Q4", "stock_position": 92.78, "fund_size": 334.06, "period_return": 6.32, "benchmark_return": null, "notes": "全年收益，规模峰值"},
+    {"quarter": "2022Q1", "stock_position": 90.32, "fund_size": null, "period_return": null, "benchmark_return": null, "notes": null},
+    {"quarter": "2022Q2", "stock_position": 89.56, "fund_size": null, "period_return": null, "benchmark_return": null, "notes": null},
+    {"quarter": "2022Q3", "stock_position": 91.90, "fund_size": null, "period_return": null, "benchmark_return": null, "notes": null},
+    {"quarter": "2022Q4", "stock_position": 92.41, "fund_size": 207.12, "period_return": null, "benchmark_return": null, "notes": null},
+    {"quarter": "2023Q1", "stock_position": 92.76, "fund_size": null, "period_return": null, "benchmark_return": null, "notes": null},
+    {"quarter": "2023Q2", "stock_position": 92.18, "fund_size": null, "period_return": null, "benchmark_return": null, "notes": null},
+    {"quarter": "2023Q3", "stock_position": 92.53, "fund_size": 244.24, "period_return": null, "benchmark_return": null, "notes": null},
+    {"quarter": "2023Q4", "stock_position": 92.95, "fund_size": 228.76, "period_return": null, "benchmark_return": null, "notes": null},
+    {"quarter": "2024Q1", "stock_position": 91.87, "fund_size": null, "period_return": null, "benchmark_return": null, "notes": null},
+    {"quarter": "2024Q2", "stock_position": 90.63, "fund_size": null, "period_return": null, "benchmark_return": null, "notes": null},
+    {"quarter": "2024Q3", "stock_position": 91.59, "fund_size": 236.90, "period_return": null, "benchmark_return": null, "notes": null},
+    {"quarter": "2024Q4", "stock_position": 92.37, "fund_size": 226.03, "period_return": null, "benchmark_return": null, "notes": null},
+    {"quarter": "2025Q1", "stock_position": 90.12, "fund_size": null, "period_return": null, "benchmark_return": null, "notes": null},
+    {"quarter": "2025Q2", "stock_position": 89.74, "fund_size": null, "period_return": null, "benchmark_return": null, "notes": "前十大合计55.67%"},
+    {"quarter": "2025Q3", "stock_position": 91.08, "fund_size": 249.14, "period_return": 36.16, "benchmark_return": 13.84, "notes": "规模峰值"},
+    {"quarter": "2025Q4", "stock_position": 83.73, "fund_size": 192.88, "period_return": 35.72, "benchmark_return": 17.65, "notes": "近十年最低仓位"},
+    {"quarter": "2026Q1", "stock_position": 83.73, "fund_size": 192.88, "period_return": 0.38, "benchmark_return": -2.94, "notes": "自2016年以来最低"}
+  ]
+}
