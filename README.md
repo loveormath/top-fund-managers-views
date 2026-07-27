@@ -19,9 +19,7 @@
 
 **🔌 MCP Server 演示**（Claude Code / Cursor / 任意 MCP 客户端 — 根模块主能力）
 
-![MCP Server 演示封面](demo/poster.png)
-
-<video src="https://raw.githubusercontent.com/loveormath/top-fund-managers-views/master/demo/demo.mp4" controls></video>
+[![MCP Server 演示封面](demo/poster.png)](https://github.com/loveormath/top-fund-managers-views/blob/master/demo/demo.mp4)
 
 **🌐 Fund Insight（Web 模块）演示**
 
