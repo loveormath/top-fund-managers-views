@@ -15,11 +15,11 @@
 
 ### 🎬 演示视频
 
-> 点击下方封面即可播放演示视频。本仓库把基金经理观点库**主能力封装为 MCP Server**，同时附带本机 Web 模块 Fund Insight；两种形态共用同一份语料与逻辑。
+> 本仓库把基金经理观点库**主能力封装为 MCP Server**，同时附带本机 Web 模块 Fund Insight；两种形态共用同一份语料与逻辑。下方视频可直接在 GitHub 页面内播放。
 
 **🔌 MCP Server 演示**（Claude Code / Cursor / 任意 MCP 客户端 — 根模块主能力）
 
-[![MCP 演示](demo/poster.png)](demo/demo.mp4)
+![](demo/demo.mp4)
 
 **🌐 Fund Insight（Web 模块）演示**
 
