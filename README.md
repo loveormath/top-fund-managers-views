@@ -7,11 +7,17 @@
 | 标签 | 内容 |
 |---|---|
 | License | MIT |
-| 类型 | Agent Skill / 可安装 Python 包 / 标准 MCP Server |
+| 类型 | Agent Skill / 可安装 Python 包 / 标准 MCP Server / 本机 Web 应用（Fund Insight） |
 | 数据 | 真实公开披露（可溯源到原文） |
 | 基金经理 | 张坤（易方达）· 谢治宇（兴证全球）· 高楠（永赢）· 刘旭（大成）· 张璐（永赢）· 赵诣（泉果） |
 | 基金覆盖 | 六位经理全部在任 + 曾任基金 + 全市场约 2.7 万只 |
-| 平台 | Claude · WorkBuddy · ChatGPT · Gemini · Cursor · 任意 MCP 客户端 · 纯命令行 |
+| 平台 | Claude · WorkBuddy · ChatGPT · Gemini · Cursor · 任意 MCP 客户端 · 纯命令行 · Fund Insight Web 界面 |
+
+### 🎬 演示视频
+
+> 点击下方封面即可播放 **Fund Insight（Web 模块）** 演示。视频文件待录制，当前为占位（封面已就位）。
+
+[![Fund Insight 演示](web/demo/poster.png)](web/demo/demo.mp4)
 
 > **⚠️ 合规与免责（必读）**：本库仅限**个人研究 / 学习辅助**使用。我们**不保证**所收录数据的准确性、完整性、及时性；**不承诺任何收益、不保证盈利、不构成投资建议**；**禁止私自传播、转售或用于任何商业 / 合规敏感用途**。转载或衍生请保留署名与出处，并遵守各数据来源方（基金公司、媒体、数据商）的使用条款。使用即表示你已理解并同意上述条款。
 
@@ -35,6 +41,7 @@
 - [十四、常见问题（FAQ）](#十四常见问题faq)
 - [十五、相关文档与更新日志](#十五相关文档与更新日志)
 - [十六、License](#十六license)
+- [十七、Web 模块（Fund Insight）](#十七web-模块fund-insight)
 
 ---
 
@@ -49,6 +56,8 @@
 - 跨六位经理做横向对比，或与全市场约 2.7 万只基金做对比、用某经理框架打分。
 
 整个项目遵循**三层架构**：`references/`（数据）→ `src/.../core/`（纯逻辑，返回字符串）→ `server.py` / `cli.py`（接口层）。逻辑与接口解耦，因此 **MCP 工具与 CLI 子命令共用同一份实现、输出完全一致**，新增一位经理**零代码改动即被全部工具识别**。
+
+此外，本项目还提供一个本机 Web 应用 **Fund Insight**（见第十七节），把上述检索 / 对比 / 评分能力以图形界面与多人讨论工作流呈现，适合不想写命令的用户。
 
 > **⚠️ 仅供研究与学习辅助，不构成任何投资建议。**
 
@@ -80,6 +89,8 @@
 | 📊 **真实基金数据** | `references/managers/{经理}/fund_data/` | 各经理全部基金的真实数据快照：每季前十大重仓股、净值 / 业绩 / 规模 / 资产配置 / 任职回报。加上 `references/all_funds/` 里**全市场约 2.7 万只基金**列表，可按需抓取任意基金做对比与评分 |
 
 **「三位一体」的含义**：观点（他说了什么）+ 方法（他怎么想的）+ 数据（真实持仓业绩）相互印证，避免「只读观点不核数据」或「只堆数据不读观点」的两种偏差。
+
+> 这三块根基同样被第十七节的 Web 模块 **Fund Insight** 直接复用（读取同一份 `references/`），无需重复准备数据。
 
 ---
 
@@ -127,6 +138,10 @@ tfm list_managers
 tfm search_corpus "白酒" --manager 谢治宇
 tfm score_fund 163406 --manager 谢治宇
 ```
+
+> 想用网页界面、多人讨论工作流？见第十七节 **Fund Insight（Docker 一键启动）**。
+
+---
 
 > 不带任何子命令运行 `python -m top_fund_managers_mcp`（或 `tfm` 不带参数）会直接启动 MCP stdio server。
 
@@ -187,7 +202,7 @@ top-fund-managers-views/
 │   └── all_funds/
 │       └── fund_list.json            # 全市场约 2.7 万只基金列表
 │
-└── scripts/                            # 薄封装脚本（调用上面的包，兼容旧工作流）
+├── scripts/                            # 薄封装脚本（调用上面的包，兼容旧工作流）
     ├── managers_list.py                # 经理动态发现器
     ├── search_corpus.py                # 语料检索
     ├── build_index.py                  # 语料索引重建
@@ -198,6 +213,16 @@ top-fund-managers-views/
     ├── fund_lookup.py                 # 按名称/代码/拼音查基金
     ├── fetch_any_fund.py             # 按需抓取任意基金持仓/净值/业绩
     └── score_fund.py                 # 框架评分一键入口
+└── web/                                # Fund Insight：本机 Web 模块（详见第十七节）
+    ├── backend/                        # FastAPI、LangGraph、检索、持久化与测试
+    ├── frontend/                       # Vue 3 / Pinia / SSE UI + Nginx 镜像
+    ├── config/managers.yaml            # Web 模块经理注册表
+    ├── references/managers/            # 与根目录同源的经理标准化资料库
+    ├── scripts/                        # 本地检索 / 索引 / 基金数据辅助脚本
+    ├── agents/openai.yaml              # Codex Skill 界面元数据
+    ├── SKILL.md                        # 五经理研究 Skill 工作流
+    ├── compose.yaml                    # 本机双服务（backend+frontend）部署
+    └── demo/                          # 演示视频与封面（见开篇「演示视频」）
 ```
 
 > **目录名变体容错**：动态发现器会容忍 `corpus/media/copus`、`fund_data/funds_data` 等命名差异，新增经理只要目录结构一致即可被识别。
@@ -555,3 +580,112 @@ tfm generate_skill --name 朱少醒 --dry-run
 ## 十六、License
 
 **MIT** — 自由用于研究、学习与非商业用途；转载 / 衍生请保留署名与出处，并遵守数据来源方的使用条款。
+
+---
+
+## 十七、Web 模块（Fund Insight）
+
+**Fund Insight** 是本仓库附带的**本机单用户 Web 应用**，把前面六位基金经理的资料库、混合检索、LangGraph 多智能体工作流与 DeepSeek 模型，统一接入到一个 Vue Web 界面里。适合不想写命令、希望用图形界面做研究、对比和讨论的用户。
+
+- 完整文档见 [`web/README.md`](web/README.md)；演示视频见开篇「演示视频」区块。
+- 部署方式：Docker Compose 一键启动（默认只绑定本机，不含注册登录或公网多租户）。
+
+> 本项目只用于研究和学习，不构成投资建议。界面头像是统一生成的虚构插画，不代表或还原经理真人形象。
+
+### 17.1 与根知识库的关系
+
+- Web 模块**直接复用**根目录的 `references/managers/{经理}/`（语料 / 方法 / 评分卡 / 基金数据），无需重复准备数据。
+- 经理清单由 Web 模块自己的注册表 [`web/config/managers.yaml`](web/config/managers.yaml) 控制。当前该注册表包含 **五位**（刘旭 / 张坤 / 张璐 / 谢治宇 / 赵诣）；根目录资料库已覆盖的**高楠**将在其注册到该表后自动进入 Web 模块。
+
+### 17.2 三种讨论方式
+
+- **单人总结**：选 1 位经理，基于其个人语料完成一次结构化回答。
+- **多人总结**：选 2–5 位经理并行独立分析，再由主持节点整理共识、分歧和证据边界。
+- **会议讨论**：首轮独立开场，次轮阅读所有开场观点后交叉回应，最后生成主持报告；N 位经理共执行 `2N+1` 次模型调用。
+
+所有模式都能在原线程继续追问；历史、发言、报告、引用、SSE 事件与 LangGraph checkpoint 会持久化，容器重启后仍可恢复。
+
+### 17.3 快速启动
+
+要求：Docker Desktop 与 Docker Compose。
+
+```powershell
+Copy-Item web\.env.example web\.env
+docker compose -f web\compose.yaml up --build
+```
+
+打开 [http://127.0.0.1:8080](http://127.0.0.1:8080)。首次启动后：在「设置」录入 DeepSeek API Key → 点「测试并刷新」读取模型与余额 → 等知识索引完成（首次会下载 `BAAI/bge-small-zh-v1.5`）→ 回到首页选择模式、经理和主题开始讨论。
+
+> 服务默认只绑定本机，不含注册登录或公网多租户功能。DeepSeek Key 只通过设置页提交、加密后写入 SQLite，接口只返回掩码，浏览器不持有已保存的明文密钥。
+
+### 17.4 系统架构
+
+```mermaid
+flowchart LR
+    UI["Vue 3 / Pinia"] -->|REST + SSE| API["FastAPI"]
+    API --> Graph["LangGraph 工作流"]
+    Graph --> DS["DeepSeek API"]
+    Graph --> Retriever["本地混合检索"]
+    Retriever --> FTS["SQLite FTS5 / BM25"]
+    Retriever --> Vector["BGE 中文向量"]
+    FTS --> Corpus["经理资料库"]
+    Vector --> Corpus
+    API --> DB["SQLite：设置、线程、事件、报告"]
+    Graph --> Checkpoint["LangGraph SQLite checkpoint"]
+```
+
+- **检索与引用**：Markdown 按标题和约 800 中文字符分块（重叠约 120 字）；FTS5 关键词与 `BAAI/bge-small-zh-v1.5` 向量用 Reciprocal Rank Fusion 合并，最多返回 8 片段；向量模型不可用时自动降级到关键词检索；每位经理节点只能检索自己的资料，直接引语须逐字匹配。
+- **LangGraph 工作流**：多人模式用动态 `Send` 并行分发经理节点，reducer 汇总结构化 `ManagerView`；单个经理调用失败，其余分支继续执行，主持报告标记缺席。
+- **SSE 事件**：`run.started / manager.started / manager.delta / manager.completed / round.started / moderator.delta / run.completed / run.failed`；事件先写 SQLite 再推送浏览器，支持 `Last-Event-ID` / `after` 断线续传。
+
+### 17.5 API 速览
+
+```text
+GET    /api/managers                 GET    /api/managers/{id}
+GET    /api/settings                 PATCH  /api/settings
+PUT    /api/settings/deepseek-key    DELETE /api/settings/deepseek-key
+POST   /api/settings/deepseek-test   POST   /api/index/rebuild
+GET    /api/index/status            POST   /api/threads
+GET    /api/threads                  GET    /api/threads/{id}
+DELETE /api/threads/{id}            POST   /api/threads/{id}/runs
+GET    /api/runs/{id}               GET    /api/runs/{id}/events
+POST   /api/runs/{id}/cancel        GET    /api/sources/{chunk_id}
+GET    /api/health
+```
+
+启动后端后可在 [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) 查看 OpenAPI 文档。
+
+### 17.6 页面与本地开发
+
+- **页面**：首页（三种模式 + 经理卡片 + 搜索筛选）、基金经理（简介 / 方法 / 基金 / 语料统计）、历史对话（筛选 / 继续追问）、讨论详情（讨论过程 / 综合报告双视图 + 来源抽屉）、设置（Key / 模型 / 索引）。
+- **后端本地开发**：`python -m venv .venv` → `pip install -r backend\requirements.txt` → `uvicorn backend.app.main:app --reload --port 8000`。
+- **前端本地开发**：`cd frontend` → `npm install` → `npm run dev`（Vite 将 `/api` 代理到 `127.0.0.1:8000`）。
+
+### 17.7 测试
+
+```powershell
+python -m pytest backend\tests -q     # 经理注册表 / 持久化 / Key 加密 / 增量索引 / 混合检索降级 / 引用校验 / LangGraph 拓扑 / API 规则
+Set-Location frontend; npm test; npm run build
+```
+
+### 17.8 Web 模块结构
+
+```text
+web/
+├── backend/                 # FastAPI、LangGraph、检索、持久化与测试
+├── frontend/                # Vue 3、Pinia、SSE UI 与 Nginx 镜像
+├── config/managers.yaml     # Web 模块经理注册表
+├── references/managers/     # 与根目录同源的经理标准化资料库
+├── scripts/                 # 本地检索、索引与基金数据辅助脚本
+├── agents/openai.yaml       # Codex Skill 界面元数据
+├── SKILL.md                 # 五经理研究 Skill 工作流
+├── compose.yaml             # 本机双服务部署
+└── demo/                   # 演示视频与封面（见开篇「演示视频」）
+```
+
+### 17.9 范围（V1 / V2）
+
+- **V1 不实现**：用户账号、收藏、自动联网更新、定时任务、实时行情、多用户配额。「重建索引」只读取当前 `references/`。
+- **V2 新增**：数据总结提示词功能。
+
+> 详细架构、接口字段与部署参数以 [`web/README.md`](web/README.md) 为准。
