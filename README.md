@@ -21,7 +21,12 @@
 
 ![MCP Server 演示封面](demo/poster.png)
 
-![](https://github.com/user-attachments/assets/74b84198-6ac0-4886-9c33-c10d01dde16d)
+
+
+https://github.com/user-attachments/assets/26e80ab6-0387-4185-92c8-346cc1260e3f
+
+
+
 
 **🌐 Fund Insight（Web 模块）演示**
 
