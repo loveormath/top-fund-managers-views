@@ -15,7 +15,13 @@
 
 ### 🎬 演示视频
 
-> 点击下方封面即可播放 **Fund Insight（Web 模块）** 演示。视频文件待录制，当前为占位（封面已就位）。
+> 点击下方封面即可播放演示视频。本仓库把基金经理观点库**主能力封装为 MCP Server**，同时附带本机 Web 模块 Fund Insight；两种形态共用同一份语料与逻辑。
+
+**🔌 MCP Server 演示**（Claude Code / Cursor / 任意 MCP 客户端 — 根模块主能力）
+
+[![MCP 演示](demo/poster.png)](demo/demo.mp4)
+
+**🌐 Fund Insight（Web 模块）演示**
 
 [![Fund Insight 演示](web/demo/poster.png)](web/demo/demo.mp4)
 
@@ -213,6 +219,7 @@ top-fund-managers-views/
     ├── fund_lookup.py                 # 按名称/代码/拼音查基金
     ├── fetch_any_fund.py             # 按需抓取任意基金持仓/净值/业绩
     └── score_fund.py                 # 框架评分一键入口
+├── demo/                               # MCP Server 演示视频与封面（见开篇「演示视频」）
 └── web/                                # Fund Insight：本机 Web 模块（详见第十七节）
     ├── backend/                        # FastAPI、LangGraph、检索、持久化与测试
     ├── frontend/                       # Vue 3 / Pinia / SSE UI + Nginx 镜像
@@ -232,6 +239,8 @@ top-fund-managers-views/
 ## 七、作为 MCP Server 运行
 
 本仓库同时是一个标准 **MCP server**：把语料检索、横向对比、框架评分、复用生成等能力以 MCP 工具暴露给任意支持 MCP 的客户端（Claude Desktop、Cursor、WorkBuddy、任意 MCP 宿主等）。
+
+> 🎬 **看效果**：开篇「演示视频」区块有 MCP Server 在 Claude Code 中的完整操作演示（[`demo/demo.mp4`](demo/demo.mp4)）。
 
 ### 包结构（单一事实来源：`src/top_fund_managers_mcp/`）
 
