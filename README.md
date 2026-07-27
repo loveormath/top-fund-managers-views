@@ -21,7 +21,7 @@
 
 ![MCP Server 演示封面](demo/poster.png)
 
-![](demo/demo.mp4)
+<video src="https://raw.githubusercontent.com/loveormath/top-fund-managers-views/master/demo/demo.mp4" controls></video>
 
 **🌐 Fund Insight（Web 模块）演示**
 
