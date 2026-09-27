@@ -2,11 +2,12 @@
 
 Fund Insight 是一个本机单用户的基金经理研究与讨论系统。它把五位基金经理的本地资料库、混合检索、LangGraph 多智能体工作流和 DeepSeek 模型接入到同一个 Vue Web 应用中。
 
-系统支持三种讨论方式：
+系统支持四种研究方式：
 
 - **单人总结**：选择 1 位经理，基于其个人语料完成一次结构化回答。
 - **多人总结**：选择 2–5 位经理并行独立分析，再由主持节点整理共识、分歧和证据边界。
 - **会议讨论**：第一轮独立开场，第二轮阅读所有开场观点后交叉回应，最后生成主持报告；N 位经理共执行 `2N+1` 次模型调用。
+- **智能研究 Agent**：用户只需提出问题。Supervisor 自主选择经理和工具，在“本地资料检索”与“专家讨论工作流”之间规划，由 Critic 评审证据充分性，不足时自动迭代。
 
 所有模式都能在原线程继续追问。历史、发言、报告、引用、SSE 事件和 LangGraph checkpoint 会持久化，容器重启后仍可恢复。
 
@@ -51,7 +52,7 @@ docker compose up --build
 1. 打开“设置”，录入 DeepSeek API Key。
 2. 点击“测试并刷新”，读取真实可用模型和余额。
 3. 等待知识索引完成；首次构建需要下载 `BAAI/bge-small-zh-v1.5`，模型缓存会保存在 Docker volume。
-4. 回到首页，选择模式、经理和主题并开始讨论。
+4. 回到首页，选择模式和主题；传统模式由用户选经理，Agent 模式由 Supervisor 动态选择。
 
 如需显式设置应用加密密钥，先生成 Fernet key，再写入 `.env` 的 `APP_ENCRYPTION_KEY`：
 
@@ -64,18 +65,53 @@ python -c "from cryptography.fernet import Fernet; print(Fernet.generate_key().d
 ## 系统架构
 
 ```mermaid
-flowchart LR
-    UI["Vue 3 / Pinia"] -->|REST + SSE| API["FastAPI"]
-    API --> Graph["LangGraph 工作流"]
-    Graph --> DS["DeepSeek API"]
-    Graph --> Retriever["本地混合检索"]
-    Retriever --> FTS["SQLite FTS5 / BM25"]
-    Retriever --> Vector["BGE 中文向量"]
-    FTS --> Corpus["五经理资料库"]
-    Vector --> Corpus
-    API --> DB["SQLite：设置、线程、事件、报告"]
-    Graph --> Checkpoint["LangGraph SQLite checkpoint"]
+flowchart TB
+    U(["💬 用户研究问题"]) --> UI["Vue 3 · Pinia<br/>实时执行轨迹"]
+    UI -->|REST| API["FastAPI · Run Service"]
+
+    subgraph LOOP["Supervisor Agent · LangGraph 有界循环"]
+      direction TB
+      P["🧠 Planner<br/>选经理 · 选工具 · 定子问题"] --> R{"Action Router"}
+      R -->|search_corpus| S["🔎 Corpus Search Tool"]
+      R -->|run_discussion| D["💬 Discussion Tool"]
+      S --> C["🛡️ Critic<br/>证据是否足够？"]
+      D --> C
+      C -->|No · 最多 4 步| P
+      C -->|Yes| F["📝 Finalizer<br/>结论 · 证据 · 分歧 · 边界"]
+    end
+
+    API --> P
+    S --> RET["混合检索<br/>FTS5 / BM25 + BGE + RRF"]
+    RET --> KB[("五位经理本地资料库")]
+
+    subgraph EXPERTS["可复用的专家讨论工作流"]
+      direction LR
+      V["校验与动态分发"] --> M1["经理 A"]
+      V --> M2["经理 B"]
+      V --> MN["经理 N"]
+      M1 --> SYN["综合 / 两轮主持"]
+      M2 --> SYN
+      MN --> SYN
+    end
+    D --> V
+    M1 & M2 & MN --> RET
+    P & M1 & M2 & MN & SYN & C & F --> LLM["DeepSeek API"]
+
+    API --> DB[("SQLite<br/>线程 · 消息 · SSE 事件")]
+    LOOP --> CP[("LangGraph Checkpoint")]
+    F -->|SSE 流式输出| UI
+
+    classDef user fill:#EEF4FF,stroke:#4B79D8,color:#17345F;
+    classDef agent fill:#F5F0FF,stroke:#7C5CE3,color:#3F2B75;
+    classDef tool fill:#ECFDF3,stroke:#20A66A,color:#155B3B;
+    classDef data fill:#FFF7E8,stroke:#D99A2B,color:#6D4710;
+    class U,UI,API user;
+    class P,R,C,F agent;
+    class S,D,V,M1,M2,MN,SYN tool;
+    class RET,KB,DB,CP,LLM data;
 ```
+
+Agent 模式并不重写原有逻辑：`search_corpus` 工具复用现有混合检索，`run_discussion` 工具封装已编译的单人 / 多人 / 会议 LangGraph。Planner 的动作、经理 ID 和模式都经过白名单校验；单次工具有 180 秒超时，整个研究循环最多 4 步。
 
 ### 检索与引用
 
@@ -89,6 +125,8 @@ flowchart LR
 
 多人模式通过动态 `Send` 并行分发经理节点，reducer 汇总结构化 `ManagerView`。会议第二轮会读取第一轮所有人的结构化观点，但仍只能引用发言经理自己的语料。单个经理调用失败时，其余分支继续执行，主持报告会标记缺席。
 
+Agent 模式在这套固定拓扑之上增加了动态决策层。每轮都会记录 Planner 决策、工具开始 / 完成状态和 Critic 结论，前端可实时展示完整轨迹。
+
 SSE 事件类型：
 
 ```text
@@ -97,6 +135,10 @@ manager.started
 manager.delta
 manager.completed
 round.started
+agent.plan.created
+agent.tool.started
+agent.tool.completed
+agent.critique.completed
 moderator.delta
 run.completed
 run.failed
@@ -106,10 +148,10 @@ run.failed
 
 ## 页面
 
-- **首页**：三种模式、五位经理卡片、搜索筛选、讨论预览和选择校验。
+- **首页**：四种模式、五位经理卡片、搜索筛选、Agent 自主规划说明和讨论预览。
 - **基金经理**：经理简介、方法标签、代表基金和语料统计。
 - **历史对话**：按关键词和模式筛选、删除、打开并继续追问。
-- **讨论详情**：“讨论过程 / 综合报告”双视图，直接证据可打开来源抽屉。
+- **讨论详情**：“讨论过程 / 综合报告”双视图，Agent 轨迹实时可见，直接证据可打开来源抽屉。
 - **设置**：DeepSeek Key、连接测试、动态模型、真实余额、语言、总结格式、索引状态与重建。
 
 桌面视觉基准为 1536×1024；平板会将工作区改为单列，手机会折叠左侧导航并纵向排列卡片。
@@ -175,13 +217,13 @@ npm test
 npm run build
 ```
 
-现有测试覆盖经理注册表、SQLite 持久化、Key 加密与掩码、索引增量更新、混合检索降级、精确引用校验、三种 LangGraph 调用拓扑、API 选择规则和前端选择限制。
+现有测试覆盖经理注册表、SQLite 持久化、Key 加密与掩码、索引增量更新、混合检索降级、精确引用校验、三种专家讨论拓扑、Supervisor 规划—工具—质检闭环、API 选择规则和前端选择限制。
 
 ## 项目结构
 
 ```text
 .
-├── backend/                 # FastAPI、LangGraph、检索、持久化与测试
+├── backend/                 # FastAPI、Supervisor / 专家 LangGraph、检索、持久化与测试
 ├── frontend/                # Vue 3、Pinia、SSE UI 与 Nginx 镜像
 ├── config/managers.yaml     # 唯一经理注册表
 ├── references/managers/     # 五位经理标准化知识库

@@ -4,13 +4,14 @@ from datetime import datetime
 from enum import StrEnum
 from typing import Any, Literal
 
-from pydantic import BaseModel, ConfigDict, Field, field_validator
+from pydantic import BaseModel, ConfigDict, Field, ValidationInfo, field_validator
 
 
 class DiscussionMode(StrEnum):
     SINGLE = "single"
     SUMMARY = "summary"
     MEETING = "meeting"
+    AGENT = "agent"
 
 
 class RunStatus(StrEnum):
@@ -69,9 +70,9 @@ class ThreadCreate(BaseModel):
 
     @field_validator("manager_ids")
     @classmethod
-    def unique_managers(cls, value: list[str]) -> list[str]:
+    def unique_managers(cls, value: list[str], info: ValidationInfo) -> list[str]:
         deduplicated = list(dict.fromkeys(value))
-        if not deduplicated:
+        if not deduplicated and info.data.get("mode") != DiscussionMode.AGENT:
             raise ValueError("至少选择一位基金经理")
         if len(deduplicated) > 5:
             raise ValueError("最多选择五位基金经理")

@@ -30,4 +30,14 @@ describe('discussion selection rules', () => {
     store.topic = '分析制造业'
     expect(store.canStart).toBe(false)
   })
+
+  it('lets the supervisor agent choose managers at runtime', () => {
+    const store = useAppStore()
+    store.selectedIds = ['liu-xu', 'zhang-kun']
+    store.setMode('agent')
+    expect(store.selectedIds).toEqual([])
+    expect(store.selectionValid).toBe(true)
+    store.toggleManager('liu-xu')
+    expect(store.selectedIds).toEqual([])
+  })
 })

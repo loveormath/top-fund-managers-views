@@ -7,7 +7,7 @@ from collections.abc import AsyncIterator
 from typing import Any
 
 from .database import Database
-from .schemas import RunStatus
+from .schemas import DiscussionMode, RunStatus
 
 
 TERMINAL_EVENTS = {"run.completed", "run.failed"}
@@ -65,9 +65,10 @@ class EventHub:
 
 
 class RunService:
-    def __init__(self, db: Database, graph: Any, events: EventHub):
+    def __init__(self, db: Database, graph: Any, agent_graph: Any, events: EventHub):
         self.db = db
         self.graph = graph
+        self.agent_graph = agent_graph
         self.events = events
         self.tasks: dict[str, asyncio.Task[None]] = {}
 
@@ -99,7 +100,8 @@ class RunService:
             )
             if thread["mode"] == "meeting":
                 await self.events.emit(run_id, "round.started", {"round": 1, "name": "独立开场"})
-            state = await self.graph.ainvoke(
+            graph = self.agent_graph if thread["mode"] == DiscussionMode.AGENT.value else self.graph
+            state = await graph.ainvoke(
                 {
                     "run_id": run_id,
                     "thread_id": thread_id,

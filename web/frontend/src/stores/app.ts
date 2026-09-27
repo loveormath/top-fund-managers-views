@@ -7,6 +7,7 @@ export const modeMeta: Record<DiscussionMode, { title: string; description: stri
   single: { title: '单人总结模式', description: '与一位基金经理对话，获得基于资料的独立观点', bullets: ['深入观点分析', '个性化追问'] },
   summary: { title: '多人总结模式', description: '邀请多位基金经理独立发表观点，生成综合对比', bullets: ['多角度观点碰撞', '共识与分歧总结'] },
   meeting: { title: '会议讨论模式', description: '模拟两轮基金经理圆桌，阅读观点后交叉回应', bullets: ['两轮互动讨论', '主持人结构化报告'] },
+  agent: { title: '智能研究 Agent', description: 'Supervisor 自主选择经理、检索证据并调用讨论工作流', bullets: ['动态规划工具', '评审后迭代补证'] },
 }
 
 export const useAppStore = defineStore('app', () => {
@@ -19,15 +20,17 @@ export const useAppStore = defineStore('app', () => {
   const topic = ref('')
 
   const selectedManagers = computed(() => managers.value.filter(item => selectedIds.value.includes(item.id)))
-  const selectionValid = computed(() => mode.value === 'single' ? selectedIds.value.length === 1 : selectedIds.value.length >= 2 && selectedIds.value.length <= 5)
+  const selectionValid = computed(() => mode.value === 'agent' || (mode.value === 'single' ? selectedIds.value.length === 1 : selectedIds.value.length >= 2 && selectedIds.value.length <= 5))
   const ready = computed(() => Boolean(settings.value?.deepseek_configured && ['ready', 'degraded'].includes(index.value?.state ?? '')))
   const canStart = computed(() => selectionValid.value && ready.value && topic.value.trim().length >= 2)
 
   function setMode(value: DiscussionMode) {
     mode.value = value
+    if (value === 'agent') selectedIds.value = []
     if (value === 'single' && selectedIds.value.length > 1) selectedIds.value = selectedIds.value.slice(0, 1)
   }
   function toggleManager(id: string) {
+    if (mode.value === 'agent') return
     if (selectedIds.value.includes(id)) selectedIds.value = selectedIds.value.filter(item => item !== id)
     else if (mode.value === 'single') selectedIds.value = [id]
     else if (selectedIds.value.length < 5) selectedIds.value.push(id)
@@ -41,7 +44,7 @@ export const useAppStore = defineStore('app', () => {
       managers.value = managerData
       settings.value = settingData
       index.value = indexData
-      if (!selectedIds.value.length && managerData.length) selectedIds.value = [managerData[0].id]
+      if (mode.value !== 'agent' && !selectedIds.value.length && managerData.length) selectedIds.value = [managerData[0].id]
     } finally { loading.value = false }
   }
   return { managers, settings, index, loading, mode, selectedIds, topic, selectedManagers, selectionValid, ready, canStart, setMode, toggleManager, load }
