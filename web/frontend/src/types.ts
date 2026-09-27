@@ -1,4 +1,13 @@
-export type DiscussionMode = 'single' | 'summary' | 'meeting'
+export type DiscussionMode = 'single' | 'summary' | 'meeting' | 'agent'
+
+export interface AgentTrace {
+  id: string
+  kind: 'plan' | 'tool' | 'critique'
+  title: string
+  detail: string
+  status: 'running' | 'completed'
+  step: number
+}
 
 export interface FundRef { code: string; name: string }
 export interface Manager {

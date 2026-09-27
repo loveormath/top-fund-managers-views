@@ -3,7 +3,7 @@ import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 import { useRoute } from 'vue-router'
 import DOMPurify from 'dompurify'
 import { marked } from 'marked'
-import { AlertCircle, ArrowUp, CheckCircle2, FileText, LoaderCircle, MessageSquareText, Sparkles, StopCircle } from '@lucide/vue'
+import { AlertCircle, ArrowUp, BrainCircuit, CheckCircle2, FileText, LoaderCircle, MessageSquareText, Sparkles, StopCircle } from '@lucide/vue'
 import { api } from '@/api'
 import ManagerAvatar from '@/components/ManagerAvatar.vue'
 import SourceDrawer from '@/components/SourceDrawer.vue'
@@ -58,6 +58,7 @@ onMounted(async () => {
     const runId = String(route.query.run || '')
     const active = thread.value?.runs.find(item => item.id === runId) || thread.value?.runs.at(-1)
     if (active && ['pending', 'running'].includes(active.status)) attach(active.id)
+    else if (active && thread.value?.mode === 'agent') attach(active.id)
     else if (active) { runStore.status = active.status; runStore.report = active.final_report }
   } catch (reason) { pageError.value = reason instanceof Error ? reason.message : '加载讨论失败' }
 })
@@ -68,13 +69,17 @@ onBeforeUnmount(() => runStore.close())
   <div class="page discussion-page">
     <section class="discussion-header panel">
       <div><span class="mode-badge">{{ thread ? modeMeta[thread.mode].title : '讨论' }}</span><h1>{{ thread?.title || '正在加载讨论…' }}</h1><p v-if="currentQuestion">{{ currentQuestion }}</p></div>
-      <div class="participant-stack"><ManagerAvatar v-for="id in thread?.manager_ids" :key="id" :src="managerMap.get(id)?.avatar || ''" :name="managerMap.get(id)?.name || id" :color="managerMap.get(id)?.color" :size="38" /></div>
+      <div class="participant-stack"><span v-if="thread?.mode === 'agent'" class="agent-avatar"><BrainCircuit :size="23" /></span><ManagerAvatar v-for="id in thread?.manager_ids" :key="id" :src="managerMap.get(id)?.avatar || ''" :name="managerMap.get(id)?.name || id" :color="managerMap.get(id)?.color" :size="38" /></div>
     </section>
     <div v-if="pageError" class="error-banner"><AlertCircle :size="17" />{{ pageError }}</div>
     <div class="result-tabs"><button :class="{ active: activeTab === 'process' }" @click="activeTab = 'process'"><MessageSquareText :size="17" />讨论过程</button><button :class="{ active: activeTab === 'report' }" @click="activeTab = 'report'"><FileText :size="17" />综合报告</button></div>
     <section v-if="activeTab === 'process'" class="process-layout">
       <div class="timeline panel">
-        <div v-if="isRunning" class="live-status"><LoaderCircle class="spin" :size="18" /><p><strong>讨论正在进行</strong><span>{{ thread?.mode === 'meeting' ? `第 ${runStore.round || 1} 轮` : '经理正在整理观点' }}</span></p><button @click="cancel"><StopCircle :size="16" />取消</button></div>
+        <div v-if="isRunning" class="live-status"><LoaderCircle class="spin" :size="18" /><p><strong>{{ thread?.mode === 'agent' ? 'Supervisor 正在执行' : '讨论正在进行' }}</strong><span>{{ thread?.mode === 'agent' ? '正在规划、调用工具并检查证据' : thread?.mode === 'meeting' ? `第 ${runStore.round || 1} 轮` : '经理正在整理观点' }}</span></p><button @click="cancel"><StopCircle :size="16" />取消</button></div>
+        <section v-if="thread?.mode === 'agent' && runStore.agentTrace.length" class="agent-trace">
+          <div class="agent-trace-heading"><BrainCircuit :size="20" /><div><strong>Supervisor 执行轨迹</strong><span>规划 → 工具 → 质检，证据不足时自动继续</span></div></div>
+          <ol><li v-for="item in runStore.agentTrace" :key="item.id" :class="[item.kind, item.status]"><span class="trace-dot"><LoaderCircle v-if="item.status === 'running'" class="spin" :size="14" /><CheckCircle2 v-else :size="14" /></span><div><strong>{{ item.title }}</strong><p>{{ item.detail }}</p></div></li></ol>
+        </section>
         <div v-if="!views.length && !isRunning" class="empty-state"><Sparkles /><h2>还没有讨论内容</h2><p>在下方输入问题开始本线程的第一次讨论。</p></div>
         <article v-for="(view, index) in views" :key="`${view.manager_id}-${view.stage}-${index}`" class="speech-card">
           <div class="speech-head"><ManagerAvatar :src="managerMap.get(view.manager_id)?.avatar || ''" :name="view.manager_name" :color="managerMap.get(view.manager_id)?.color" :size="48" /><div><h3>{{ view.manager_name }}</h3><p>{{ view.stage === 'response' ? '第二轮 · 交叉回应' : view.stage === 'opening' ? '第一轮 · 独立开场' : '独立分析' }}</p></div><span class="confidence" :class="view.confidence">置信度 {{ view.confidence }}</span></div>

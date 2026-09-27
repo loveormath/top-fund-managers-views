@@ -11,14 +11,14 @@ from fastapi.responses import StreamingResponse
 from langgraph.checkpoint.sqlite.aio import AsyncSqliteSaver
 from pydantic import BaseModel
 
-from .score_service import generate_fund_prompt_service
-
+from .agent_workflow import build_supervisor_workflow
 from .config import AppConfig
 from .database import Database, utcnow
 from .deepseek import DeepSeekGateway
 from .registry import ManagerRegistry
 from .retrieval import CorpusIndex
 from .runs import EventHub, RunService
+from .score_service import generate_fund_prompt_service
 from .schemas import (
     ApiMessage,
     DeepSeekKeyInput,
@@ -52,13 +52,16 @@ async def lifespan(app: FastAPI):
     events = EventHub(db)
     async with AsyncSqliteSaver.from_conn_string(str(config.checkpoint_path)) as checkpointer:
         graph = build_workflow(registry, corpus_index, gateway, events.emit, checkpointer)
+        agent_graph = build_supervisor_workflow(
+            registry, corpus_index, gateway, events.emit, graph, checkpointer
+        )
         app.state.config = config
         app.state.db = db
         app.state.registry = registry
         app.state.index = corpus_index
         app.state.gateway = gateway
         app.state.events = events
-        app.state.runs = RunService(db, graph, events)
+        app.state.runs = RunService(db, graph, agent_graph, events)
         app.state.index_task = None
         if os.getenv("FUND_INSIGHT_AUTO_INDEX", "1") == "1" and corpus_index.status()["state"] == "empty":
             app.state.index_task = asyncio.create_task(_rebuild(app), name="initial-index-build")
@@ -73,7 +76,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(
     title="Fund Insight API",
     version="1.0.0",
-    description="五位基金经理的单人总结、多人综合与两轮会议讨论 API。",
+    description="五位基金经理的专家讨论与 Supervisor Agent 研究 API。",
     lifespan=lifespan,
 )
 

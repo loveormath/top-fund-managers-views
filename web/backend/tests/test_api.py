@@ -16,6 +16,12 @@ def test_api_manager_settings_and_selection_validation(monkeypatch, tmp_path):
             json={"mode": "single", "manager_ids": ["liu-xu", "zhang-kun"]},
         )
         assert response.status_code == 422
+        agent = client.post(
+            "/api/threads",
+            json={"mode": "agent", "manager_ids": []},
+        )
+        assert agent.status_code == 201
+        assert agent.json()["manager_ids"] == []
         saved = client.put("/api/settings/deepseek-key", json={"api_key": "sk-local-test-secret"})
         assert saved.status_code == 200
         assert saved.json()["deepseek_key_masked"] != "sk-local-test-secret"

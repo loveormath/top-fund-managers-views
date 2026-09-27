@@ -601,7 +601,7 @@ tfm generate_skill --name 朱少醒 --dry-run
 
 ## 十七、Web 模块（Fund Insight）
 
-**Fund Insight** 是本仓库附带的**本机单用户 Web 应用**，把前面六位基金经理的资料库、混合检索、LangGraph 多智能体工作流与 DeepSeek 模型，统一接入到一个 Vue Web 界面里。适合不想写命令、希望用图形界面做研究、对比和讨论的用户。
+**Fund Insight** 是本仓库附带的**本机单用户 Web 应用**，把五位基金经理的资料库、混合检索、LangGraph 多智能体工作流与 DeepSeek 模型，统一接入到一个 Vue Web 界面里。适合不想写命令、希望用图形界面做研究、对比和讨论的用户。
 
 - 完整文档见 [`web/README.md`](web/README.md)；演示视频见开篇「演示视频」区块。
 - 部署方式：Docker Compose 一键启动（默认只绑定本机，不含注册登录或公网多租户）。
@@ -613,11 +613,12 @@ tfm generate_skill --name 朱少醒 --dry-run
 - Web 模块**直接复用**根目录的 `references/managers/{经理}/`（语料 / 方法 / 评分卡 / 基金数据），无需重复准备数据。
 - 经理清单由 Web 模块自己的注册表 [`web/config/managers.yaml`](web/config/managers.yaml) 控制。当前该注册表包含 **五位**（刘旭 / 张坤 / 张璐 / 谢治宇 / 赵诣）；根目录资料库已覆盖的**高楠**将在其注册到该表后自动进入 Web 模块。
 
-### 17.2 三种讨论方式
+### 17.2 四种研究方式
 
 - **单人总结**：选 1 位经理，基于其个人语料完成一次结构化回答。
 - **多人总结**：选 2–5 位经理并行独立分析，再由主持节点整理共识、分歧和证据边界。
 - **会议讨论**：首轮独立开场，次轮阅读所有开场观点后交叉回应，最后生成主持报告；N 位经理共执行 `2N+1` 次模型调用。
+- **智能研究 Agent**：Supervisor 根据问题自主选择经理，调用本地资料检索或现有专家讨论工作流，由 Critic 评审后决定继续补证或生成报告。
 
 所有模式都能在原线程继续追问；历史、发言、报告、引用、SSE 事件与 LangGraph checkpoint 会持久化，容器重启后仍可恢复。
 
@@ -638,21 +639,29 @@ docker compose -f web\compose.yaml up --build
 
 ```mermaid
 flowchart LR
-    UI["Vue 3 / Pinia"] -->|REST + SSE| API["FastAPI"]
-    API --> Graph["LangGraph 工作流"]
-    Graph --> DS["DeepSeek API"]
-    Graph --> Retriever["本地混合检索"]
-    Retriever --> FTS["SQLite FTS5 / BM25"]
-    Retriever --> Vector["BGE 中文向量"]
-    FTS --> Corpus["经理资料库"]
-    Vector --> Corpus
-    API --> DB["SQLite：设置、线程、事件、报告"]
-    Graph --> Checkpoint["LangGraph SQLite checkpoint"]
+    U(["用户问题"]) --> P["Supervisor Planner"]
+    P --> R{"Action Router"}
+    R -->|search_corpus| S["本地资料检索"]
+    R -->|run_discussion| D["专家讨论工作流"]
+    S --> C{"Critic 证据评审"}
+    D --> C
+    C -->|需要补证 · 最多 4 步| P
+    C -->|证据足够| F["生成结构化报告"]
+    S --> K[("FTS5 + BGE + RRF")]
+    D --> M["单人 / 多人 / 两轮会议"]
+    P & C & F & M --> L["DeepSeek API"]
+    F -->|SSE| UI["Vue 3 / Pinia"]
+
+    classDef agent fill:#F5F0FF,stroke:#7C5CE3,color:#3F2B75;
+    classDef tool fill:#ECFDF3,stroke:#20A66A,color:#155B3B;
+    class P,R,C,F agent;
+    class S,D,M,K tool;
 ```
 
 - **检索与引用**：Markdown 按标题和约 800 中文字符分块（重叠约 120 字）；FTS5 关键词与 `BAAI/bge-small-zh-v1.5` 向量用 Reciprocal Rank Fusion 合并，最多返回 8 片段；向量模型不可用时自动降级到关键词检索；每位经理节点只能检索自己的资料，直接引语须逐字匹配。
 - **LangGraph 工作流**：多人模式用动态 `Send` 并行分发经理节点，reducer 汇总结构化 `ManagerView`；单个经理调用失败，其余分支继续执行，主持报告标记缺席。
-- **SSE 事件**：`run.started / manager.started / manager.delta / manager.completed / round.started / moderator.delta / run.completed / run.failed`；事件先写 SQLite 再推送浏览器，支持 `Last-Event-ID` / `after` 断线续传。
+- **Supervisor Agent**：用白名单约束动作、经理与讨论模式；单工具 180 秒超时，最多迭代 4 步；复用原有检索和专家图，不复制业务逻辑。
+- **SSE 事件**：在原有经理和主持事件之外，增加 `agent.plan.created / agent.tool.started / agent.tool.completed / agent.critique.completed`；事件先写 SQLite 再推送浏览器，支持断线续传。
 
 ### 17.5 API 速览
 
@@ -673,7 +682,7 @@ GET    /api/health
 
 ### 17.6 页面与本地开发
 
-- **页面**：首页（三种模式 + 经理卡片 + 搜索筛选）、基金经理（简介 / 方法 / 基金 / 语料统计）、历史对话（筛选 / 继续追问）、讨论详情（讨论过程 / 综合报告双视图 + 来源抽屉）、设置（Key / 模型 / 索引）。
+- **页面**：首页（四种模式 + 经理卡片 + Agent 自主规划）、基金经理（简介 / 方法 / 基金 / 语料统计）、历史对话（筛选 / 继续追问）、讨论详情（Agent 轨迹 + 专家发言 + 综合报告 + 来源抽屉）、设置（Key / 模型 / 索引）。
 - **后端本地开发**：`python -m venv .venv` → `pip install -r backend\requirements.txt` → `uvicorn backend.app.main:app --reload --port 8000`。
 - **前端本地开发**：`cd frontend` → `npm install` → `npm run dev`（Vite 将 `/api` 代理到 `127.0.0.1:8000`）。
 
@@ -688,7 +697,7 @@ Set-Location frontend; npm test; npm run build
 
 ```text
 web/
-├── backend/                 # FastAPI、LangGraph、检索、持久化与测试
+├── backend/                 # FastAPI、Supervisor / 专家 LangGraph、检索、持久化与测试
 ├── frontend/                # Vue 3、Pinia、SSE UI 与 Nginx 镜像
 ├── config/managers.yaml     # Web 模块经理注册表
 ├── references/managers/     # 与根目录同源的经理标准化资料库
